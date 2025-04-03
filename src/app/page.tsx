@@ -1,103 +1,39 @@
-import Image from "next/image";
+import Hero from "@/components/hero/Hero";
+import Project, {ProjectInterface} from "@/components/project/Project";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    return (
+        <>
+            <Hero></Hero>
+            {Projects.map((p) => (
+                <Project
+                    projectName={p.projectName}
+                    projectBrief={p.projectBrief}
+                    projectSourceCodeLink={p.projectSourceCodeLink}
+                    technologies={p.technologies}
+                ></Project>
+            ))}
+        </>
+    )
 }
+
+const Projects: ProjectInterface[] = [
+    {
+        projectName: "mrun",
+        projectBrief: "mpod is a containerization project that I am working on currently to learn about containers and Linux operating systems. This project includes mrun; a low-level OCI compliant container runtime. This project is currently in the works, but I am currently reading into and implementing a lot of what I am learning - which is mostly around Linux Kernel features such like namespaces and cgroups, virtual filesystems, virtual networking, seccomp and all things process isolation and technologies based on container technology (mainly Kubernetes). I'm also learning a lot about OCI (Open Container Initiative) specification so that my project complies with industry standards for runtimes, images etc. In building this project I am also learning about creating and desting CLI tools with the intent of distribution. Working closesly with the Linux Kernel is something that I am really enjoying thus far.",
+        projectSourceCodeLink: "https://github.com/mikeyfennelly1/mrun",
+        technologies: ["Linux", "Containerization", "Go", "C"]
+    },
+    {
+        projectName: "eefenn-cli",
+        projectBrief: "A command line tool for managing scripts and automation workflows on Ubuntu. I created this tool, because it was something that I wanted for some repetetive tasks that were cropping up with eefenn (hence why it is creatively named eefenn-cli). This command line tool is essentially a command line manager for local automation tasks. It gives a simple interface to create, manage and run scripts.",
+        projectSourceCodeLink: "",
+        technologies: ["Linux", "Containerization", "Go", "C"]
+    },
+    {
+        projectName: "os--char-dev",
+        projectBrief: "This project was an end of block project in college for Operating Systems with Mark Burkley. Mark's approach is an one that has made me enjoy college a lot this block. He embraces and invests himself in anything curricular and extracurricular that can help make good engineers, not just focusing exclusively and strictly on a curriculum - even though he leaves no stone unturned in that regard too. I thought that it would only be right to show on my profile the content being applied - because at the end of the day that is what matters. Mark's lectures included all sorts not just about operating systems, but also topics around open source and free software, virtualization, concurrency, kernel module development and the Unix programming interface in C - just to name a few. This project was intended to be a demonstration of some of the topics covered, hence it is a loadable kernel module, with an accompanying user space application, which is multithreaded server with a REST API. The project that I was a part of was a character device driver to get system information from kernel space, and a multithreaded serve to serve the data in JSON format to client processes - both written in C. I loved this module, and especially the focus on the information being put to use. I thought the project was worth putting on my profile too. Kudos to you Mark, was some craic!\n",
+        projectSourceCodeLink: "",
+        technologies: ["Linux", "Device Drivers", "C", "Unit Testing"]
+    },
+]
