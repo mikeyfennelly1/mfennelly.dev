@@ -1,4 +1,5 @@
 import "./project.css"
+import {GeistMono} from "geist/font/mono";
 
 export interface ProjectInterface {
     // the name of the project
@@ -26,17 +27,21 @@ export interface ProjectInterface {
 export default function Project({projectName, projectBrief, projectSourceCodeLink, technologies}: ProjectInterface) {
     return (
         <>
-            <h1>{projectName}</h1>
-            <p>{projectBrief}</p>
-            {/*
-                Loop through each technology in the list
-                creating a span element for each
-             */}
-            {technologies.map((technology) => (
-                <span>{technology}</span>
-            ))}
+            <div className={"medium-separator"}>
+                <h3 className={GeistMono.className}>{projectName}</h3>
+                <p>{projectBrief}</p>
 
-            <a href={projectSourceCodeLink}>Source Code</a>
+
+                <div className="small-separator">
+                    {technologies.map((technology) => (
+                        <span className={"technology-text"}>{technology}</span>
+                    ))}
+                </div>
+
+                <div className="small-separator">
+                    <a href={projectSourceCodeLink} target={"_blank"}>Source Code</a>
+                </div>
+            </div>
         </>
     )
 }

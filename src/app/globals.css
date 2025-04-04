@@ -120,3 +120,52 @@
     @apply bg-background text-foreground;
   }
 }
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.section-padding {
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+.small-separator {
+  margin-top: 10px;
+}
+
+.medium-separator {
+  margin-top: 100px;
+}
+
+.large-separator {
+  margin-top: 150px;
+}
+
+.large-padding-gap-top {
+  padding-top: 150px;
+}
+
+.p-bold {
+  font-weight: 500;
+}
+
+.side-note {
+  font-size: 1.4rem;
+}
+
+.container {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}

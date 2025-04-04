@@ -1,32 +1,19 @@
-import Hero from "@/components/hero/Hero";
+import './projects.css'
 import Project, {ProjectInterface} from "@/components/projects/project/Project";
-import Experience from "@/components/experience/Experience";
 
-export default function Home() {
-    return (
-        <>
-            <section className={"section-padding"}>
-                <Hero></Hero>
-            </section>
-            <section className={"section-padding"}>
+export default function Projects() {
+    {ProjectItems.map((p) => (
+        <Project
+            projectName={p.projectName}
+            projectBrief={p.projectBrief}
+            projectSourceCodeLink={p.projectSourceCodeLink}
+            technologies={p.technologies}
+        ></Project>
+    ))}
 
-                <Experience></Experience>
-            </section>
-            <section id={"projects"} className={"black-page section-padding"}>
-                {Projects.map((p) => (
-                    <Project
-                        projectName={p.projectName}
-                        projectBrief={p.projectBrief}
-                        projectSourceCodeLink={p.projectSourceCodeLink}
-                        technologies={p.technologies}
-                    ></Project>
-                ))}
-            </section>
-        </>
-    )
 }
 
-const Projects: ProjectInterface[] = [
+const ProjectItems: ProjectInterface[] = [
     {
         projectName: "mrun",
         projectBrief: "mpod is a containerization project that I am working on currently to learn about containers and Linux operating systems. This project includes mrun; a low-level OCI compliant container runtime. This project is currently in the works, but I am currently reading into and implementing a lot of what I am learning - which is mostly around Linux Kernel features such like namespaces and cgroups, virtual filesystems, virtual networking, seccomp and all things process isolation and technologies based on container technology (mainly Kubernetes). I'm also learning a lot about OCI (Open Container Initiative) specification so that my project complies with industry standards for runtimes, images etc. In building this project I am also learning about creating and desting CLI tools with the intent of distribution. Working closesly with the Linux Kernel is something that I am really enjoying thus far.",
