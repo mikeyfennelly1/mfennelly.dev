@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import { GeistSans } from 'geist/font/sans'
+import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Mikey Fennelly | Trainee Software Engineer",
@@ -30,6 +31,7 @@ export default function RootLayout({
           topLeftImage={profilePhoto}
       ></Navbar>
         {children}
+      <Footer></Footer>
       </body>
     </html>
   );
