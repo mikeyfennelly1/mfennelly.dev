@@ -1,4 +1,5 @@
 import './navbar.css'
+import MFLogo from "@/components/mf-logo/MFLogo";
 
 type link = {
     href: string;
@@ -10,15 +11,14 @@ type filePath = string;
 
 interface NavbarInterface {
     centerItems: link[];
-    topLeftImage: filePath;
 }
 
-export default function Navbar({centerItems, topLeftImage}: NavbarInterface) {
+export default function Navbar({centerItems}: NavbarInterface) {
     return (
         <>
-            <div>
+            <nav>
                 <div>
-                    <img src={topLeftImage} alt=""/>
+                    <MFLogo></MFLogo>
                 </div>
                 <div className="navbar-center">
                     {centerItems.map((link, index) => (
@@ -27,7 +27,7 @@ export default function Navbar({centerItems, topLeftImage}: NavbarInterface) {
                     </a>
                     ))}
                 </div>
-            </div>
+            </nav>
         </>
     )
 }

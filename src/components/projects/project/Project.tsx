@@ -12,7 +12,9 @@ export interface ProjectInterface {
     technologies: string[];
 
     // link to the source code for the project on Github
-    projectSourceCodeLink: string;
+    projectSourceCodeLink?: string;
+
+    videoLink?: string;
 }
 
 /**
@@ -24,22 +26,29 @@ export interface ProjectInterface {
  * @param technologies - the technologies used in the creation of the project
  * @constructor
  */
-export default function Project({projectName, projectBrief, projectSourceCodeLink, technologies}: ProjectInterface) {
+export default function Project({projectName, projectBrief, projectSourceCodeLink, technologies, videoLink}: ProjectInterface) {
     return (
         <>
             <div className={"medium-separator"}>
-                <h3 className={GeistMono.className}>{projectName}</h3>
+                {projectSourceCodeLink ?
+                    <h3 className={GeistMono.className}>{projectName}</h3>
+                    :
+                    <h3>{projectName}</h3>
+                }
                 <p>{projectBrief}</p>
-
 
                 <div className="small-separator">
                     {technologies.map((technology) => (
-                        <span className={"technology-text"}>{technology}</span>
+                        <span key={technology} className={"link-text-separation"}>{technology}</span>
                     ))}
                 </div>
 
                 <div className="small-separator">
-                    <a href={projectSourceCodeLink} target={"_blank"}>Source Code</a>
+                    {projectSourceCodeLink ?
+                        <a href={projectSourceCodeLink} target={"_blank"}>Source Code</a>
+                        :
+                        <a href={videoLink} target={"_blank"}>Link to Video</a>
+                    }
                 </div>
             </div>
         </>

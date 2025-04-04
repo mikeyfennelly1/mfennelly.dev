@@ -9,8 +9,6 @@ export const metadata: Metadata = {
   description: "I am currently studying Immersive Software Engineering [ISE] at the University of Limerick. I am a passionate technologist with a keen interest in Software Engineering, Artificial Intelligence and video creation and graphics.",
 };
 
-const profilePhoto = "/";
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -20,15 +18,19 @@ export default function RootLayout({
     <html lang="en" className={GeistSans.className}>
       <body>
       <Navbar
-          centerItems={[{
-              text: "Software Projects",
-              href: "/"
-          },
-          {
-              text: "Content Creation",
-              href: "/"
-          }]}
-          topLeftImage={profilePhoto}
+          centerItems={[
+              {
+                  text: "Experience",
+                  href: "#experience"
+              },
+              {
+                  text: "Software Projects",
+                  href: "#software-projects"
+              },
+              {
+                  text: "Content Creation",
+                  href: "#content-creation"
+              }]}
       ></Navbar>
         {children}
       <Footer></Footer>
