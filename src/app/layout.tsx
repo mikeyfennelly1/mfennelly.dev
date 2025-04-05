@@ -20,16 +20,16 @@ export default function RootLayout({
       <Navbar
           centerItems={[
               {
-                  text: "Experience",
-                  href: "#experience"
+                  text: "Product Mockups",
+                  href: "/product"
               },
               {
-                  text: "Software Projects",
-                  href: "#software-projects"
+                  text: "Linux Kernel Projects",
+                  href: "/linux-kernel-projects"
               },
               {
                   text: "Content Creation",
-                  href: "#content-creation"
+                  href: "/content-creation"
               }]}
       ></Navbar>
         {children}

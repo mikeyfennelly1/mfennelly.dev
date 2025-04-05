@@ -1,6 +1,5 @@
 import Hero from "@/components/hero/Hero";
 import Experience from "@/components/experience/Experience";
-import Projects from "@/components/projects/Projects";
 import Testimonial from "@/components/experience/testimonial/Testimonial";
 
 export default function Home() {
@@ -9,7 +8,7 @@ export default function Home() {
             <section className={"section-padding large-bottom-separator"}>
                 <Hero></Hero>
             </section>
-            <section id={"experience"} className={"section-padding light-border-top large-bottom-separator invert-colors"}>
+            <section id={"experience"} className={"section-padding large-bottom-separator invert-colors large-padding-y"}>
                 <Experience
                     experienceItems={[
                         {
@@ -35,9 +34,6 @@ export default function Home() {
                     ]}
                 ></Experience>
                 <Testimonial></Testimonial>
-            </section>
-            <section className={"section-padding light-border-top"}>
-                <Projects></Projects>
             </section>
         </>
     )

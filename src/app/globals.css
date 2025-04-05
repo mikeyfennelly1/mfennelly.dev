@@ -148,8 +148,8 @@ h3 {
 }
 
 .invert-colors {
-  background-color: #040303;
-  color: #FCFAF9;
+  background-color: #d7d7d7;
+  color: #161616;
 }
 
 p {
@@ -202,6 +202,11 @@ p {
   padding-top: 150px;
 }
 
+.large-padding-y {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
 .medium-padding-x {
   padding-right: 50px;
   padding-left: 50px;
@@ -215,7 +220,7 @@ p {
   font-size: 1.4rem;
 }
 
-section {
+section > * {
   max-width: 1500px;
   margin-right: auto;
   margin-left: auto;
@@ -242,5 +247,9 @@ section {
 }
 
 .small-padding-top {
+  padding-top: 50px;
+}
+
+.small-padding-bottom {
   padding-top: 50px;
 }
