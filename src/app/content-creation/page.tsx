@@ -37,7 +37,6 @@ const ContentCreationProjects: ContentCreationProjectInterface[] = [
         videoId: "1fD_B0_BUsE&t",
         technologies: standardContentCreationStack
     },
-
 ]
 
 export default function Product() {
@@ -48,7 +47,7 @@ export default function Product() {
                 <h1 className={"large-padding-gap-top"}>Content Creation Projects</h1>
                 <p className={"small-separator"}>The following are some of the content creation projects I've worked on. I think they show how I've developed a passion (and very solid skills) for story telling through the use of technology (mostly the Adobe Suite). All graphics were created by myself.</p>
                 {ContentCreationProjects.map((p) => (
-                    <div className="content-creation-project-container">
+                    <div className="large-separator content-creation-project-container">
                         <div>
                             <Project
                                 key={p.videoName} // Ensure uniqueness

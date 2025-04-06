@@ -30,7 +30,12 @@ export default function RootLayout({
               {
                   text: "Content Creation",
                   href: "/content-creation"
-              }]}
+              },
+              {
+                  text: "About Me",
+                  href: "/about-me"
+              }
+          ]}
       ></Navbar>
         {children}
       <Footer></Footer>
