@@ -15,7 +15,7 @@ export default function Home() {
                             jobTitle: "Founder and Software Developer",
                             company: "eefenn Digital Services",
                             startDate: "September 2024",
-                            endDate: "Current",
+                            endDate: "Now",
                             description: <>
                                 While in college, I started <span className={"bold"}>eefenn</span> as a way to market the skillset that I'd been developing while doing some freelance work.
                                 Worked directly with customers to deliver full stack applications from design, frontend development, backend development and to provisioning infrastructure on AWS.
