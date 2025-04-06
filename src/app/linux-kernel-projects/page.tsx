@@ -1,6 +1,5 @@
 "use client"
 
-import "./linux-kernel-projects.css"
 import Project, {ProjectInterface} from "@/components/projects/project/Project";
 import GithubRepo from "@/components/github-repo-component/GithubRepo";
 
@@ -31,7 +30,7 @@ const Projects: LinuxKernelProject[] = [
     {
         metadata: {
             projectName: "os--char-dev",
-            projectBrief: "This project was an end-of-block project in college for Operating Systems with Mark. Mark's approach is one that has made me enjoy college a lot this block. Mark's lectures included various topics, not just about operating systems but also open source and free software, virtualization, concurrency, kernel module development, and the Unix programming interface in C – just to name a few. This project was intended to be a demonstration of some of the topics covered; hence, it is a loadable kernel module with an accompanying user-space application. The project that I was a part of was a character device driver to get system information from kernel space and a multithreaded server to serve the data in JSON format to client processes – both written in C.",
+            projectBrief: "This project was an end-of-block project in college for Operating Systems with Mark. This project was intended to be a demonstration of some of the topics covered; hence, it is a loadable kernel module with an accompanying user-space application. The project that I was a part of was a character device driver to get system information from kernel space and a multithreaded server to serve the data in JSON format to client processes – both written in C.",
             projectSourceCodeLink: "https://github.com/mikeyfennelly1/os--char-dev--lkm",
             technologies: ["Linux", "Device Drivers", "C", "Unit Testing"]
         },
@@ -46,7 +45,7 @@ export default function LinuxKernelProjects() {
                 <h1 className={"large-padding-gap-top"}>Linux Kernel Projects</h1>
                 <p className={"small-separator medium-bottom-separator"}>Low level operating system technology is a topic that I have been getting very interested in since beginning college. Mark Burkley is a  man who has had huge influence on my work since starting college. This interest of mine has been largely fostered by Mark (perhaps unbeknownst to himself) so I have to give him his flowers for being an inspiration to some of the following work.</p>
                 {Projects.map((p) => (
-                    <div key={Math.random()} className={"linux-kernel-project"}>
+                    <div key={Math.random()} className={"project-columns"}>
                         <Project
                             key={Math.random()}
                             projectName={p.metadata.projectName}

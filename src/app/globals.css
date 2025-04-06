@@ -148,7 +148,7 @@ h3 {
 }
 
 .invert-colors {
-  background-color: #d7d7d7;
+  background-color: #f3f3f3;
   color: #161616;
 }
 
@@ -162,6 +162,27 @@ p {
     padding-right: 5rem;
     padding-left: 5rem;
     padding-top: 5rem;
+  }
+}
+
+.project-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.project-columns > * {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .project-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    align-items: center;
+    gap: 50px;
   }
 }
 

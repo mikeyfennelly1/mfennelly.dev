@@ -1,7 +1,5 @@
-.content-creation-project-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
+.video-container {
+    height: 100%;
 }
 
 .video-container > * {

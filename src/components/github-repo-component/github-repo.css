@@ -1,9 +1,14 @@
 .repo-card {
-    max-width: 700px;
+    max-width: calc(100vw - 60px);
     padding: 30px;
     border-radius: 3px;
-    margin: 100px 20px 50px 50px;
-    max-height: 400px;
+
+}
+
+@media screen and (min-width: 800px) {
+    .repo-card {
+        margin: 100px 20px 50px 50px;
+    }
 }
 
 .light-border {
@@ -36,7 +41,7 @@
 }
 
 .repo-project-source-code-container {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: end;
