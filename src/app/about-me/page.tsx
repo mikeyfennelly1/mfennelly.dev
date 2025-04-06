@@ -12,10 +12,7 @@ interface AboutMeInterface {
 const AboutMeSections: AboutMeSectionInterface[] = [
     {
         title: "Who am I",
-        content: "I am a 19 year old from Ireland with many interests from sport to reading and technology.\n" +
-            "\n" +
-            "I did my Leaving Certificate last year (the Irish State exams for leaving secondary/high school). I took a gap year this academic year, and have spent the year working, learning and thinking about what I want to do in the future. I have always been interested in technology, and this interest of mine has really blossomed in the past few months, and I have learned many things from web development to Machine Learning and Artificial Intelligence.\n" +
-            "\n",
+        content: "I am a 20 year old from Ireland with many interests from sport to reading and technology.\n"
     },
     {
         title: "How I Got Into Software, Tech and Content Creation\n",
