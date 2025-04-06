@@ -5,7 +5,7 @@ import Repo from "@/components/github-repo-component/GithubRepo";
 export default function Github() {
     return (
         <>
-            <Repo></Repo>
+            <Repo repoName={"mrun"}></Repo>
         </>
     )
 }
