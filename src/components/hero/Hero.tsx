@@ -5,7 +5,7 @@ import {GeistSans} from "geist/font/sans";
 export default function Hero() {
     return (
         <>
-            <div className={"large-separator"}>
+            <div className={"medium -separator"}>
                 <h1 className={GeistSans.className} style={{fontSize: "5rem"}}>Mikey Fennelly</h1>
                 <div className={"small-separator"}>
                     <p>
@@ -17,7 +17,7 @@ export default function Hero() {
                     </p>
 
                     <p>
-                        <span className="bold">When I'm not doing these things, I'm thinking about them!</span>
+                        <span className="bold italic">When I'm not doing these things, I'm thinking about them!</span>
                     </p>
                 </div>
             </div>
