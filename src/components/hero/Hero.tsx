@@ -8,8 +8,14 @@ export default function Hero() {
             <div className={"large-separator"}>
                 <h1 className={GeistSans.className} style={{fontSize: "5rem"}}>Mikey Fennelly</h1>
                 <div className={"small-separator"}>
-                    <p>I am currently studying <span className={"bold"}>Immersive Software Engineering [ISE]</span> at the University of Limerick. I am a passionate technologist with a keen interest in Software Engineering, Artificial Intelligence and video creation and graphics.</p>
-                    <p className={"medium-separator"}>When I'm not doing these things, I'm thinking about them!</p>
+                    <p>
+                        I'm a passionate technologist with a keen interest in Software Engineering, Artificial Intelligence, video creation and graphics.
+                        While actively pursuing these interests, I'm also enjoying college life at the <span className="bold">University of Limerick</span> where I'm studying <span className="bold">Immersive Software Engineering [ISE]</span>.
+                    </p>
+
+                    <p className={"medium-separator"}>
+                        <span className="bold">When I'm not doing these things, I'm thinking about them!</span>
+                    </p>
                 </div>
             </div>
         </>
