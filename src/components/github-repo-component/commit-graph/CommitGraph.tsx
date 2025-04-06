@@ -1,3 +1,5 @@
+import "./commit-graph.css"
+
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, LineElement, PointElement, Title, Tooltip, Legend, TimeScale } from 'chart.js';
@@ -24,7 +26,9 @@ const CommitGraph: React.FC<CommitGraphProps> = ({commits}: CommitGraphProps) =>
                 data: commits.map((commit: CommitDay) => commit.commitCount),
                 fill: false,
                 borderColor: 'rgba(0,0,0,1)',
+                borderWidth: 0.5,
                 pointRadius: 0, // Hide points
+                tension: 0.3,
             },
         ],
     };
@@ -69,8 +73,8 @@ const CommitGraph: React.FC<CommitGraphProps> = ({commits}: CommitGraphProps) =>
     };
 
     return (
-        <div className="p-4 m-4">
-            <Line data={chartData} options={options} />
+        <div className="commit-chart-container p-4 m-4">
+            <Line data={chartData} options={options} width={500} />
         </div>
     );
 };

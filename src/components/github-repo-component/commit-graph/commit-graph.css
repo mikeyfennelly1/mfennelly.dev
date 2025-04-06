@@ -1,0 +1,10 @@
+.commit-chart-container {
+    max-height: 200px;
+    min-width: 100%;
+    padding-right: 50px;
+}
+
+.commit-chart-container > * {
+    max-height: 200px;
+    min-width: 100%;
+}
