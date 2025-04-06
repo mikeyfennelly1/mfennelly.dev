@@ -16,20 +16,23 @@ export default function Home() {
                             company: "eefenn Digital Services",
                             startDate: "September 2024",
                             endDate: "Current",
-                            description: "While in college I started eefenn as a way to market my skillset, which I was already using for freelance work. \n" +
-                                "\n" +
-                                "Worked directly with customers to deliver full stack applications from design, frontend development, backend development and provisioning infrastructure on AWS. I worked to create a healthy development lifecycle that included CI/CD pipelines to automate test and deployment operations.\n" +
-                                "\n" +
-                                "I learned a lot about project management and managing priority of tasks etc. I mainly used Jira to create tickets and outline requirements.",
+                            description: <>
+                                While in college, I started <span className={"bold"}>eefenn</span> as a way to market the skillset that I'd been developing while doing some freelance work.
+                                Worked directly with customers to deliver full stack applications from design, frontend development, backend development and to provisioning infrastructure on AWS.
+                                I worked to create a healthy development lifecycle that included CI/CD pipelines to automate test and deployment operations.
+                                I learned a lot about project management and managing priority of tasks etc.
+                            </>,
                         },
                         {
                             jobTitle: "Software Technician",
                             company: "Midland Steel Reinforcement Supplies",
                             startDate: "June 2024",
                             endDate: "August 2024",
-                            description: "During the summer of 2024 I spent my time writing software of various forms in Midland Steel Reinforcement Supplies. \n" +
-                                "\n" +
-                                "I was core in design and implementation to many key technical projects during my time there, writing software to integrate existing and future software systems and created systems to provide business intelligence for decision making in MSRS. Some of the systems I was involved in were fully implemented by myself, and the core ideas of some others were given to dedicated software third parties within the industry as POCs/references. Some of the projects I was involved in included:",
+                            description: <>
+                                Heavily involved in the design and implementation of many key projects. Wrote software to help integrate a number of existing software systems.
+                                Also created a system to provide business intelligence on MSRS. Some of the systems I worked on were implemented
+                                fully by me in house, while some others were developed by me as Proof of Concepts and then handed off to external companies for further development.
+                            </>
                         },
                     ]}
                 ></Experience>
