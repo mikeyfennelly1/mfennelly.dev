@@ -6,6 +6,8 @@ export default function Github() {
     return (
         <>
             <Repo repoName={"mrun"}></Repo>
+            <Repo repoName={"eefenn-cli"}></Repo>
+            <Repo repoName={"eefenn-cli"}></Repo>
         </>
     )
 }

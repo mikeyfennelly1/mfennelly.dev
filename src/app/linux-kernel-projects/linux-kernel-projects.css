@@ -1,0 +1,6 @@
+.linux-kernel-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
