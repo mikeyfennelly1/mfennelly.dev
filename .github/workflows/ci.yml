@@ -23,6 +23,9 @@ jobs:
           apk add git
           git --version
 
+      - name: Install Next.js CLI
+        run: npm install next react react-dom
+
       - name: Install NPM packages
         run: npm install
 
