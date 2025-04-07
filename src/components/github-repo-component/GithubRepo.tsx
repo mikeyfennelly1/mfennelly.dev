@@ -27,9 +27,10 @@ export interface CommitInfo {
 
 interface RepoInterface {
     repoName: string;
+    technologies?: string[];
 }
 
-const Repo = ({ repoName }: RepoInterface) => {
+const Repo = ({ repoName, technologies }: RepoInterface) => {
     const [metadata, setMetadata] = useState<RepoMetaData | null>(null);
     const [commitHistoryData, setCommitHistoryData] = useState<CommitDay[] | null>(null);
     const [loading, setLoading] = useState(true);
@@ -126,6 +127,11 @@ const Repo = ({ repoName }: RepoInterface) => {
                         <div className={"repo-topics small-separator"}>
                             {metadata.topics.map((topic) => (
                                 <span key={Math.random()} className={"repo-topic"}>{topic}</span>
+                            ))}
+                        </div>
+                        <div className={"technologies-container"}>
+                            {technologies?.map((tech) => (
+                                <span key={Math.random()} className={" flex"}>{tech}</span>
                             ))}
                         </div>
                     </div>

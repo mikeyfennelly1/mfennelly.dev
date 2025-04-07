@@ -25,7 +25,7 @@ const ProductMockups: ProjectMockupInterface[] = [
             projectName: "Brain Tumor Classifier",
             projectBrief: "This project is an image classifier that uses a convolutional neural network to classify brain scans, predicting if patients have brain tumors.\n",
             projectSourceCodeLink: "https://github.com/mikeyfennelly1/brainTumorClassifier",
-            technologies: [""],
+            technologies: ["Python", "Tensorflow", "Keras", "OpenCV", "Matplotlib", "Pandas"],
             startDate: "September 2023",
             endDate: "April 2024"
         },
@@ -47,10 +47,9 @@ export default function Product() {
                             key={p.repoName}
                             projectName={p.metadata.projectName}
                             projectBrief={p.metadata.projectBrief}
-                            technologies={p.metadata.technologies}
                             projectSourceCodeLink={p.metadata.projectSourceCodeLink}
                         ></Project>
-                        <GithubRepo repoName={p.repoName}
+                        <GithubRepo repoName={p.repoName} technologies={p.metadata.technologies}
                         ></GithubRepo>
                     </div>
 

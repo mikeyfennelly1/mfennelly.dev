@@ -18,6 +18,7 @@ export default function Experience({experienceItems}: ExperienceInterface) {
                         startDate={experience.startDate}
                         endDate={experience.endDate}
                         description={experience.description}
+                        companyLink={experience.companyLink}
                     ></ExperienceItem>
                 ))}
             </div>

@@ -59,8 +59,9 @@ export default function LinuxKernelProjects() {
                             projectName={p.metadata.projectName}
                             projectBrief={p.metadata.projectBrief}
                             projectSourceCodeLink={p.metadata.projectSourceCodeLink}
-                            technologies={p.metadata.technologies}                        />
+                        />
                         <GithubRepo
+                            technologies={p.metadata.technologies}
                             key={Math.random()}
                             repoName={p.repoName}>
                         </GithubRepo>

@@ -8,7 +8,7 @@ const books: book[] = [
     {
         title: "Steve Jobs",
         author: "Walter Isaacson",
-        bio: "n January 2024 my uncle went to California for the 40th anniversary of the original Macintosh. Why is that you ask? Well it turns out that my Uncle Frank Fennelly was an engineer on the original Mac team from 1982 to 1984 (he is in a light brown sweatshirt on the very back right of this photo). I had always known this growing up, and his trip to Palo Alto earlier this year prompted me to read more into Apple during his time there. It was very interesting to read the book and imagine the beginnings of consumer technology, but even cooler to hear stories from Uncle Fran that aren't written about in the book.\n" +
+        bio: "In January 2024 my uncle went to California for the 40th anniversary of the original Macintosh. Why is that you ask? Well it turns out that my Uncle Frank Fennelly was an engineer on the original Mac team from 1982 to 1984 (he is in a light brown sweatshirt on the very back right of this photo). I had always known this growing up, and his trip to Palo Alto earlier this year prompted me to read more into Apple during his time there. It was very interesting to read the book and imagine the beginnings of consumer technology, but even cooler to hear stories from Uncle Fran that aren't written about in the book.\n" +
             "\n" +
             "My Uncle Paul Fennelly also worked at Apple as an engineer at the same time too, and worked on the Apple Lisa team. He too had stories of working at Apple during Silicon Valley's heyday and both of my uncles had stories of dealing with Steve Jobs himself. This book is brilliant to begin with, but the extra untold stories from my uncles made the whole story even better.",
     },
@@ -70,7 +70,7 @@ function Books() {
     return (
         <>
             {books.map((book) => (
-                <section>
+                <section key={Math.random()}>
                     <h1>{book.title}<span style={{fontWeight: 200}}> - {book.author}</span></h1>
                     <p>{book.bio}</p>
                 </section>

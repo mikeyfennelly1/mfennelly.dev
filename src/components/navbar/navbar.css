@@ -27,7 +27,7 @@ nav > img {
     display: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 0px) {
     #navbar-center {
         display: none !important;
     }

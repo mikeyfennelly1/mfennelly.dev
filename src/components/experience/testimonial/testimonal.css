@@ -3,3 +3,8 @@
         padding: 0 100px;
     }
 }
+
+.testimonial-container p {
+    border-left: 4px solid var(--accent-purple);
+    padding-left: 50px;
+}

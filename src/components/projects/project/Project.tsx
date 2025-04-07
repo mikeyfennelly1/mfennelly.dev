@@ -12,7 +12,7 @@ export interface ProjectInterface {
     projectBrief: string;
 
     // the technologies used in the creation of the project (languages, frameworks etc.)
-    technologies: string[];
+    technologies?: string[];
 
     // link to the source code for the project on Github
     projectSourceCodeLink?: string;
@@ -42,9 +42,6 @@ export default function Project({projectName, projectBrief, projectSourceCodeLin
                 <p>{projectBrief}</p>
 
                 <div className="small-separator">
-                    {technologies.map((technology) => (
-                        <span key={technology} className={"link-text-separation technology"}>{technology}</span>
-                    ))}
                 </div>
             </div>
         </>

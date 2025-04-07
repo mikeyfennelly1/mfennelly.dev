@@ -1,6 +1,6 @@
 import "./content-creation.css"
 
-import Project, {ProjectInterface} from "@/components/projects/project/Project";
+import Project from "@/components/projects/project/Project";
 import YoutubeEmbed from "@/components/youtube-embed/YoutubeEmbed";
 
 const standardContentCreationStack: string[] = ["Adobe Premiere Pro", "Adobe After Effects", "Photoshop", "Mapbox", "Geolayers 3"];
