@@ -4,7 +4,7 @@ export default function Testimonial() {
     return (
         <>
             <div className="medium-separator container testimonial-container">
-                <p className={"side-note"} style={{fontWeight: 200}}>
+                <p className={"side-note"} style={{fontWeight: 200, fontSize: 20, fontStyle: "italic"}}>
                     I had the pleasure of supervising Mikey during his internship at Midland Steel, where he consistently demonstrated strong technical skills and a proactive work ethic.
 
                     Mikey contributed to key projects, including the design and production data comparison report, the development of an IFC Parsing Algorithm, and the architecture design for our Installation Reports Database. He also handled various IT tasks with efficiency and reliability.

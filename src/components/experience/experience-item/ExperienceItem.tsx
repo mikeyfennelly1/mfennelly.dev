@@ -5,7 +5,7 @@ export interface ExperienceItemInterface {
     company: string;
     startDate: string;
     endDate: string;
-    description: string;
+    description: ReactNode;
     children?: ReactNode;
 }
 
