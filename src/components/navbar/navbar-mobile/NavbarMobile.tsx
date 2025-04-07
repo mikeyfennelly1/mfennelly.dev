@@ -17,17 +17,17 @@ const NavBarMobile: React.FC<NavbarProps> = ({logo}) => {
         throw new Error("NavBarComputer must be used within a NavContext.Provider");
     }
 
-    const {menuActive, setMenuActive} = navContext;
+    const {isOpen, toggleMenu} = navContext;
 
     const toggleMenuActive = (): void => {
-        setMenuActive(!menuActive)
+        toggleMenu()
     }
 
     return (
         <>
             <nav>
                 <div className="nav-items-container">
-                    <div className={`logo-container ${menuActive ? "black-logo" : ""}`}>
+                    <div className={`logo-container ${isOpen ? "black-logo" : ""}`}>
                         {logo}
                     </div>
                     <div className="btn" id="toggle-btn" onClick={toggleMenuActive}>

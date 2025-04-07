@@ -56,7 +56,8 @@ export default function Product() {
                                 projectBrief={p.videoBrief}
                                 projectSourceCodeLink={""}
                                 technologies={p.technologies}
-                            />
+                                startDate={""}
+                                endDate={""}                            />
                         <div className={"video-container"}>
                             <YoutubeEmbed videoId={p.videoId}/>
                         </div>

@@ -38,7 +38,11 @@ export default function Project({projectName, projectBrief, projectSourceCodeLin
                     :
                     <h3 className={""}>{projectName}</h3>
                 }
-                <h4>{startDate} - {endDate}</h4>
+                {(startDate && endDate)?
+                    <h4>{startDate} - {endDate}</h4>
+                :
+                    <></>
+                }
                 <p>{projectBrief}</p>
 
                 <div className="small-separator">
