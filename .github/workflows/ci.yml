@@ -30,7 +30,7 @@ jobs:
         run: npm install
 
       - name: Build webpage
-        run: next build
+        run: npx next build
 
       - name: Clone github-pages branch
         run: |
