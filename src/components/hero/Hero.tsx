@@ -8,9 +8,9 @@ export default function Hero() {
     return (
         <>
             <div className={"large-separator"}>
-                <h1 className={GeistSans.className} style={{fontSize: "5rem"}}>Mikey Fennelly</h1>
+                <h1 className={`${GeistSans.className}`} style={{fontSize: "5rem"}}>Mikey Fennelly</h1>
                 <div className={"small-separator"}>
-                    <p>I am currently studying <span className={"bold"}>Immersive Software Engineering [ISE]</span> at the University of Limerick. I am a passionate technologist with a keen interest in Software Engineering, Artificial Intelligence and video creation and graphics.</p>
+                    <p>I am currently studying <span className={"bold accent1"}>Immersive Software Engineering [ISE]</span> at the University of Limerick. I am a passionate technologist with a keen interest in Software Engineering, Artificial Intelligence and video creation and graphics.</p>
                     <p className={"medium-separator"}>When I'm not doing these things, I'm thinking about them!</p>
                 </div>
                 <Link href={"/about-me"}>

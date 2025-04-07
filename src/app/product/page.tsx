@@ -14,7 +14,9 @@ const ProductMockups: ProjectMockupInterface[] = [
             projectName: "CharlemagneDB",
             projectBrief: "CharlemagneDB is an website for a concept database platform that is AI oriented in its development process to automate many of the reduntant tasks in database configuration for applications.\n",
             projectSourceCodeLink: "https://github.com/mikeyfennelly1/CharlamagneDB",
-            technologies: ["React", "GSAP", "TailwindCSS", "Figma", "Adobe XD", "Docker", "Framer Motion", "Firebase"]
+            technologies: ["React", "GSAP", "TailwindCSS", "Figma", "Adobe XD", "Docker", "Framer Motion", "Firebase"],
+            startDate: "September 2023",
+            endDate: "April 2024"
         },
         repoName: "CharlamagneDB"
     },
@@ -23,7 +25,9 @@ const ProductMockups: ProjectMockupInterface[] = [
             projectName: "Brain Tumor Classifier",
             projectBrief: "This project is an image classifier that uses a convolutional neural network to classify brain scans, predicting if patients have brain tumors.\n",
             projectSourceCodeLink: "https://github.com/mikeyfennelly1/brainTumorClassifier",
-            technologies: [""]
+            technologies: [""],
+            startDate: "September 2023",
+            endDate: "April 2024"
         },
         repoName: "brainTumorClassifier"
     },
@@ -38,6 +42,8 @@ export default function Product() {
                 {ProductMockups.map((p) => (
                     <div key={Math.random()} className={"project-columns"}>
                         <Project
+                            startDate={p.metadata.startDate}
+                            endDate={p.metadata.endDate}
                             key={p.repoName}
                             projectName={p.metadata.projectName}
                             projectBrief={p.metadata.projectBrief}

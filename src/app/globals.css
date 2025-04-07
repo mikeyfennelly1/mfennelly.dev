@@ -57,7 +57,7 @@
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
+  --accent: oklch(0.344 0.175 299.123);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
@@ -78,6 +78,7 @@
   --sidebar-ring: oklch(0.708 0 0);
 
   --separator-factor: 25px;
+  --font-playfair: 'Playfair Display', serif;
 }
 
 .dark {
@@ -93,7 +94,7 @@
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
+  --accent: oklch(0.872 0.273 143.724);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
@@ -273,6 +274,7 @@ section > * {
 
 body > section {
   margin-top: 30px;
+  padding-bottom: 30px;
 }
 
 .layout-space-between {
@@ -294,4 +296,47 @@ body > section {
 
 .small-padding-bottom {
   padding-top: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .midland-steel-projects {
+    padding: 50px 100px;
+  }
+}
+
+.midland-steel-projects {
+  display: grid;
+}
+
+:root {
+  --accent-purple: #622dff;
+}
+
+h4 {
+  color: var(--accent-purple);
+}
+
+.midland-steel-projects > * {
+  margin-bottom: 30px;
+  display: inline;
+}
+
+.project-circle-container {
+  display: inline;
+  margin-right: 30px;
+  margin-top: 5px;
+  max-width: fit-content;
+}
+
+.project-brief-container {
+  display: inline;
+  max-width: fit-content;
+}
+
+.midland-steel-project-outer-container {
+  display: flex;
+}
+
+.midland-steel-project-circle {
+  margin: 10px 0;
 }

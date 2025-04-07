@@ -47,12 +47,12 @@ export default function Navbar({links}: NavbarInterface) {
     return (
         <>
             <nav className={isAtTop ? "" : "navbar-backdrop"}>
-                <div>
+                <div className={"mikey-logo"}>
                     <Link href={'/'}>
                         <MFLogo></MFLogo>
                     </Link>
                 </div>
-                <div className="navbar-center">
+                <div id="navbar-center">
                     {links.map((link, index) => (
                         <a href={link.href} target={link.target} key={index} className="navbar-item">
                         {link.text}
@@ -60,7 +60,12 @@ export default function Navbar({links}: NavbarInterface) {
                     ))}
                 </div>
             </nav>
-            <nav id={"mobile-slideout"}>
+            <nav className={isAtTop ? "" : "navbar-backdrop"} id={"mobile-slideout"}>
+                <div className={"mikey-logo"}>
+                    <Link href={'/'}>
+                        <img style={{maxHeight: "40px"}} src="/mikey.jpg" alt=""/>
+                    </Link>
+                </div>
                 <NavContext.Provider value={{ isOpen, toggleMenu }}>
                     <NavToggleButton></NavToggleButton>
                     <NavSlideout links={links}></NavSlideout>

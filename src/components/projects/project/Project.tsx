@@ -5,6 +5,9 @@ export interface ProjectInterface {
     // the name of the project
     projectName: string;
 
+    startDate: string;
+    endDate: string;
+
     // a brief message of  what the project was about the project.
     projectBrief: string;
 
@@ -26,29 +29,22 @@ export interface ProjectInterface {
  * @param technologies - the technologies used in the creation of the project
  * @constructor
  */
-export default function Project({projectName, projectBrief, projectSourceCodeLink, technologies, videoLink}: ProjectInterface) {
+export default function Project({projectName, projectBrief, projectSourceCodeLink, technologies, videoLink, startDate, endDate}: ProjectInterface) {
     return (
         <>
             <div className={"medium-separator"}>
                 {projectSourceCodeLink ?
-                    <h3 className={GeistMono.className}>{projectName}</h3>
+                    <h3 className={`condense accent2 ${GeistMono.className}`}>{projectName}</h3>
                     :
-                    <h3>{projectName}</h3>
+                    <h3 className={""}>{projectName}</h3>
                 }
+                <h4>{startDate} - {endDate}</h4>
                 <p>{projectBrief}</p>
 
                 <div className="small-separator">
                     {technologies.map((technology) => (
-                        <span key={technology} className={"link-text-separation"}>{technology}</span>
+                        <span key={technology} className={"link-text-separation technology"}>{technology}</span>
                     ))}
-                </div>
-
-                <div className="small-separator">
-                    {projectSourceCodeLink ?
-                        <a href={projectSourceCodeLink} target={"_blank"}>Source Code</a>
-                        :
-                        <a href={videoLink} target={"_blank"}>Link to Video</a>
-                    }
                 </div>
             </div>
         </>

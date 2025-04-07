@@ -33,8 +33,53 @@ export default function Home() {
                         },
                     ]}
                 ></Experience>
+                <div className={"midland-steel-projects"}>
+                    {midlandSteelProjectBriefs.map((brief) => (
+                        <MidlandSteelProject
+                            key={Math.random()}
+                            projectBrief={brief}
+                            bulletPointSize={5}
+                            circleColour={"#161616"}
+                        ></MidlandSteelProject>
+                    ))}
+                </div>
+
                 <Testimonial></Testimonial>
             </section>
+        </>
+    )
+}
+
+const midlandSteelProjectBriefs: string[] = [
+    "A weldpoint calculation system to calculate weldpoints in prefabricated rebar structures, directly from plaintext design files in IFC format - streamlining the collaboration of the design and robotics departments.",
+    "A key exploratory data analysis project, relating to production data.",
+    "The design and implementation of the 'Central MSRS Database' - to provide a variety of KPIs for the business and interface with new systems used at MSRS for reporting on installation activities and many other key metrics.",
+    "An IFC parsing algorithm, used to translate IFC files into other file formats used at MSRS."
+]
+
+interface MidlandSteelProjectProps {
+    projectBrief: string;
+    bulletPointSize: number;
+    circleColour: string;
+}
+
+function MidlandSteelProject({projectBrief, bulletPointSize, circleColour}: MidlandSteelProjectProps) {
+    return (
+        <>
+            <div className={"midland-steel-project-outer-container"}>
+                <div className={"project-circle-container"}>
+                    <svg
+                        className={"midland-steel-project-circle"}
+                        xmlns="http://www.w3.org/2000/svg" width={bulletPointSize * 2} height={bulletPointSize * 2}>
+                        <circle cx={bulletPointSize} cy={bulletPointSize} r={bulletPointSize} fill={circleColour}/>
+                    </svg>
+                </div>
+                <div className={"project-brief-container"}>
+                    <p>
+                        {projectBrief}
+                    </p>
+                </div>
+            </div>
         </>
     )
 }

@@ -13,22 +13,31 @@ nav {
     transition: 1s;
 }
 
+nav > img {
+    max-width: fit-content;
+}
+
 .navbar-backdrop {
     transition: 1s;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-height: 75px;
 }
 
 #mobile-slideout {
     display: none;
 }
 
-@media screen and (max-width: 1000px) {
-    .navbar-center {
+@media screen and (max-width: 1200px) {
+    #navbar-center {
         display: none !important;
     }
     #mobile-slideout {
-        display: block;
+        display: flex;
     }
+}
+
+.navbar-item {
+    margin-right: 20px;
 }
 
 .navbar-center {

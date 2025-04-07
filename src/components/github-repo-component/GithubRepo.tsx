@@ -3,7 +3,6 @@ import "./github-repo.css"
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import {GeistMono} from "geist/font/mono";
-import CommitGraph from "@/components/github-repo-component/commit-graph/CommitGraph";
 
 interface RepoMetaData {
     name: string;
@@ -88,12 +87,27 @@ const Repo = ({ repoName }: RepoInterface) => {
         fetchCommitHistoryInfo();
     }, []);
 
-    if (loading) return <div>Loading...</div>;
+    if (loading) return (
+        <div className="repo-card repo-card-drop-shadow">
+            <div className={"top-card"}>
+                <div className={"skeleton-profile-picture skeleton"}/>
+                <div className={"repo-title-owner-container repo-title-owner-container-skeleton"}>
+                    <h6 className={`repo-title skeleton-text ${GeistMono.className}`}></h6>
+                    <h6 className={"repo-owner skeleton-text"}></h6>
+                </div>
+                <div className={"repo-project-source-code-container-skeleton skeleton"}>
+                </div>
+            </div>
+            <div className={"repo-topics small-separator"}>
+            </div>
+        </div>
+    );
 
     return (
         <>
-            {metadata ?
-                    <div className="repo-card drop-shadow">
+            {
+                metadata ?
+                    <div className="repo-card repo-card-drop-shadow">
                         <div className={"top-card"}>
                             <img className={"repo-owner-avatar"} src={metadata.owner.avatar_url} alt=""/>
                             <div className={"repo-title-owner-container"}>
@@ -114,15 +128,10 @@ const Repo = ({ repoName }: RepoInterface) => {
                                 <span key={Math.random()} className={"repo-topic"}>{topic}</span>
                             ))}
                         </div>
-                        {commitHistoryData?
-                            <CommitGraph commits={commitHistoryData}
-                            ></CommitGraph>
-                            :
-                            <p>Loading...</p>
-                        }
                     </div>
                     :
-                    <p>Loading...</p>
+
+                    <></>
             }
         </>
     );

@@ -2,7 +2,59 @@
     max-width: calc(100vw - 60px);
     padding: 30px;
     border-radius: 3px;
+    min-height: 300px;
+}
 
+.skeleton {
+    min-height: 10px;
+    background-color: #efefef;
+    box-shadow: none;
+}
+
+h6 .skeleton {
+    min-height: 2rem;
+    min-width: 100px;
+    background-color: #676767;
+}
+
+.top-card-skeleton {
+    max-width: 200px;
+}
+
+@keyframes backgroundFade {
+    0% {
+        background-color: #f6f6f6;
+    }
+    50% {
+        background-color: #efefef;
+    }
+    100% {
+        background-color: #f6f6f6;
+    }
+}
+
+.skeleton-text {
+    min-height: 10px;
+    min-width: 50px;
+    background-color: #efefef;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+    margin-top: 10px;
+    animation: backgroundFade 3s infinite ease-in-out;
+}
+
+.skeleton-profile-picture {
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+}
+
+.repo-title {
+    max-width: 175px;
+}
+
+.repo-owner {
+    min-width: 250px;
 }
 
 @media screen and (min-width: 800px) {
@@ -36,8 +88,15 @@
     font-size: 1rem;
 }
 
-.drop-shadow {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.repo-card-drop-shadow {
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.repo-project-source-code-container-skeleton {
+    height: 25px;
+    min-width: 60px;
+    border-radius: 100px;
+    margin: auto 0 auto auto;
 }
 
 .repo-project-source-code-container {
