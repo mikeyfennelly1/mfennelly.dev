@@ -27,7 +27,7 @@ export default function RootLayout({
                   href: "/"
               },
               {
-                  text: "Product",
+                  text: "Product Mockups",
                   href: "/product"
               },
               {
