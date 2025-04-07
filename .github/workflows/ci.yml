@@ -2,7 +2,7 @@ name: Build portfolio website
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build:
