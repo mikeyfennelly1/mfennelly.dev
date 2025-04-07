@@ -1,6 +1,5 @@
 import "./footer.css"
 import {GeistMono} from "geist/font/mono";
-import EefennLogo from "@/components/eefenn-logo/EefennLogo";
 import Link from "next/link";
 
 export default function Footer() {

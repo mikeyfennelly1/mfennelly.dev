@@ -1,3 +1,5 @@
+"use client"
+
 import "./nav-bar-mobile.css"
 
 import NavToggleButton from "../nav-toggle-button/NavToggleButton";

@@ -15,7 +15,7 @@ export default function Home() {
                             jobTitle: "Founder and Software Developer",
                             company: "eefenn Digital Services",
                             startDate: "September 2024",
-                            endDate: "Current",
+                            endDate: "Present",
                             description: "While in college I started eefenn as a way to market my skillset, which I was already using for freelance work. \n" +
                                 "\n" +
                                 "Worked directly with customers to deliver full stack applications from design, frontend development, backend development and provisioning infrastructure on AWS. I worked to create a healthy development lifecycle that included CI/CD pipelines to automate test and deployment operations.\n" +

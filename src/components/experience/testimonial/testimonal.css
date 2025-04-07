@@ -1,3 +1,5 @@
-.testimonial-container {
-    padding: 0 100px;
+@media screen and (min-width: 800px) {
+    .testimonial-container {
+        padding: 0 100px;
+    }
 }

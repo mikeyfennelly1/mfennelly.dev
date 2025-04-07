@@ -1,17 +1,33 @@
 nav {
-    margin-top: 25px;
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 25px 30px;
+    position: fixed;
+    top: 0;
+    min-width: 100vw;
+    background-color: white;
+    z-index: 100;
+    transition: 1s;
 }
 
-@media screen and (max-width: 800px) {
+.navbar-backdrop {
+    transition: 1s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#mobile-slideout {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
     .navbar-center {
         display: none !important;
+    }
+    #mobile-slideout {
+        display: block;
     }
 }
 

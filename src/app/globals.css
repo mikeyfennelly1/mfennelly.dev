@@ -76,6 +76,8 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  --separator-factor: 25px;
 }
 
 .dark {
@@ -129,17 +131,28 @@ body {
 h1 {
   font-size: 3rem;
   font-weight: 500;
+  letter-spacing: -3px;
 }
 
 @media screen and (max-width: 800px) {
   h1 {
-    line-height: 1.2; /* Adjusts the space between lines */
+    line-height: 1; /* Adjusts the space between lines */
+    margin-bottom: 40px;
   }
 }
 
 h2 {
   font-size: 2.5rem;
   font-weight: 500;
+  letter-spacing: -3px;
+}
+
+.condense {
+  letter-spacing: -1.5px;
+}
+
+.experience-item:first-of-type {
+  padding-top: 0;
 }
 
 h3 {
@@ -188,44 +201,46 @@ p {
 
 @media screen and (max-width: 799px) {
   .large-separator {
-    margin-top: 100px !important;
+    margin-top: 50px !important;
   }
 }
-.section-padding {
-  padding-right: 2rem;
-  padding-left: 2rem;
-  padding-top: 4rem;
+@media screen and (max-width: 799px) {
+
 }
 
+section {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 4rem;
+}
 
 .small-separator {
   margin-top: 10px;
 }
 
 .medium-separator {
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: calc(var(--separator-factor));
+  padding-top: calc(var(--separator-factor));
 }
 
 .large-separator {
-  margin-top: 150px;
+  margin-top: calc(var(--separator-factor) * 4);
 }
 
 .medium-bottom-separator {
-  margin-bottom: 50px;
+  margin-bottom: calc(var(--separator-factor) * 2);
 }
 
 .large-bottom-separator {
-  margin-bottom: 150px;
+  margin-bottom: calc(var(--separator-factor) * 2);
 }
 
 .large-padding-gap-top {
-  padding-top: 150px;
+  padding-top: calc(var(--separator-factor) * 3);
 }
 
 .large-padding-y {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: calc(var(--separator-factor) * 3);
 }
 
 .medium-padding-x {
@@ -245,8 +260,8 @@ section > * {
   max-width: 1500px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 @media screen and (min-width: 800px) {
@@ -254,6 +269,10 @@ section > * {
     padding-left: 3rem;
     padding-right: 3rem;
   }
+}
+
+body > section {
+  margin-top: 30px;
 }
 
 .layout-space-between {

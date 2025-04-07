@@ -18,7 +18,11 @@ export default function RootLayout({
     <html lang="en" className={GeistSans.className}>
       <body>
       <Navbar
-          centerItems={[
+          links={[
+              {
+                  text: "Home",
+                  href: "/"
+              },
               {
                   text: "Product Mockups",
                   href: "/product"
@@ -34,9 +38,12 @@ export default function RootLayout({
               {
                   text: "About Me",
                   href: "/about-me"
+              },
+              {
+                  text: "Bookshelf",
+                  href: "/bookshelf"
               }
-          ]}
-      ></Navbar>
+          ]}></Navbar>
         {children}
       <Footer></Footer>
       </body>

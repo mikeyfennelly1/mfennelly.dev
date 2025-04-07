@@ -20,8 +20,8 @@ export default function ExperienceItem(
     }: ExperienceItemInterface) {
     return (
         <>
-            <div className={"medium-separator"}>
-                <h3><span className={"bold"}>{jobTitle}</span> - <span className={"font-light"}>{company}</span></h3>
+            <div className={"experience-item medium-separator"}>
+                <h3 className={"condense"}><span className={"bold"}>{jobTitle}</span> - <span className={"font-light"}>{company}</span></h3>
                 <h4>{startDate} - {endDate}</h4>
                 <p className={"small-separator"}>{description}</p>
                 {children}

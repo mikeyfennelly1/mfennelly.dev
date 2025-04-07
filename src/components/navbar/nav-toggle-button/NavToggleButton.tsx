@@ -8,16 +8,18 @@ const NavToggleButton = () => {
     const navContext = useContext(NavContext)
 
     if (!navContext) {
-        throw new Error("NavBarComputer must be used within a NavContext.Provider");
+        throw new Error("NavToggleButton must be used within a NavContext.Provider");
     }
 
-    const {menuActive} = navContext;
+    const {isOpen} = navContext;
 
     return (
         <>
-            <div id="menu-container">
-                <span className={`line ${menuActive ? "top-line-rotated" : ""}`} id="top-line"></span>
-                <span className={`line ${menuActive ? "bottom-line-rotated" : ""}`} id="bottom-line"></span>
+            <div id="toggle-button" onClick={navContext.toggleMenu}>
+                <div id="menu-container">
+                    <span className={`line ${isOpen ? "top-line-rotated" : ""}`} id="top-line"></span>
+                    <span className={`line ${isOpen ? "bottom-line-rotated" : ""}`} id="bottom-line"></span>
+                </div>
             </div>
         </>
     )

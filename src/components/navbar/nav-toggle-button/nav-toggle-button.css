@@ -1,0 +1,63 @@
+#menu-container {
+    cursor: pointer;
+    height: 5px;
+    width: fit-content;
+    display: flex;
+    margin: 10px;
+    justify-content: start;
+    position: absolute;
+    width: 20px;
+    margin-right: 30px;
+}
+
+#toggle-button {
+    position: absolute;
+    right: 30px;
+    min-width: 40px;
+    min-height: 40px;
+    z-index: 100;
+}
+
+.line {
+    width: 20px;
+    height: 1.25px;
+    background-color: black;
+    display: inline-block;
+    --transition--duration: 0.25s;
+}
+
+#top-line {
+    position: absolute;
+    align-self: start;
+    top: 0;
+    left: 0;
+    width: 80%;
+    margin-left: 20%;
+    transition: var(--transition--duration) ease-in-out;
+}
+
+#bottom-line {
+    position: absolute;
+    align-self: end;
+    top: 5px;
+    left: 0;
+    transition: var(--transition--duration) ease-in-out;
+}
+
+.top-line-rotated {
+    rotate: 45deg;
+    transform: translateY(2px);
+    scale: 1.1;
+    transition: var(--transition--duration) ease-in-out;
+    background-color: black;
+    width: 100% !important;
+    margin-left: 0% !important;
+}
+
+.bottom-line-rotated {
+    rotate: -45deg;
+    transform: translateY(-2px);
+    scale: 1.1;
+    transition: var(--transition--duration) ease-in-out;
+    background-color: black;
+}
