@@ -1,3 +1,0 @@
-= mfennelly.dev
-
-This is the source code for my personal website, link:https://mfennelly.dev[mfennelly.dev].
