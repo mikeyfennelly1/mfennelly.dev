@@ -39,7 +39,9 @@ jobs:
       - name: Copy website to github-pages branch
         run: |
           rsync -av --progress ./out/ github-pages --delete
-          touch github-pages/.nojekyll
+
+      - name: Add .nojekyll file
+        run: touch github-pages/.nojekyll
 
       - name: Push github-pages branch changes
         run: |
