@@ -60,11 +60,11 @@ export default function LinuxKernelProjects() {
                             projectBrief={p.metadata.projectBrief}
                             projectSourceCodeLink={p.metadata.projectSourceCodeLink}
                         />
-                        <GithubRepo
-                            technologies={p.metadata.technologies}
-                            key={Math.random()}
-                            repoName={p.repoName}>
-                        </GithubRepo>
+                        {/*<GithubRepo*/}
+                        {/*    technologies={p.metadata.technologies}*/}
+                        {/*    key={Math.random()}*/}
+                        {/*    repoName={p.repoName}>*/}
+                        {/*</GithubRepo>*/}
                     </div>
                 ))}
             </section>

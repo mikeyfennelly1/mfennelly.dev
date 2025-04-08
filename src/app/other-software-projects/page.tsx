@@ -50,10 +50,10 @@ export default function Page() {
                             projectSourceCodeLink={p.metadata.projectSourceCodeLink}
                             technologies={p.metadata.technologies}
                         />
-                        <GithubRepo
-                            key={Math.random()}
-                            repoName={p.repoName}>
-                        </GithubRepo>
+                        {/*<GithubRepo*/}
+                        {/*    key={Math.random()}*/}
+                        {/*    repoName={p.repoName}>*/}
+                        {/*</GithubRepo>*/}
                     </div>
                 ))}
             </section>

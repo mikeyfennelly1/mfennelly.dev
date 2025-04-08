@@ -49,8 +49,8 @@ export default function Product() {
                             projectBrief={p.metadata.projectBrief}
                             projectSourceCodeLink={p.metadata.projectSourceCodeLink}
                         ></Project>
-                        <GithubRepo repoName={p.repoName} technologies={p.metadata.technologies}
-                        ></GithubRepo>
+                        {/*<GithubRepo repoName={p.repoName} technologies={p.metadata.technologies}*/}
+                        {/*></GithubRepo>*/}
                     </div>
 
                 ))}
