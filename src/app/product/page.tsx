@@ -2,34 +2,37 @@
 
 import Project, {ProjectInterface} from "@/components/projects/project/Project";
 import GithubRepo from "@/components/github-repo-component/GithubRepo";
+import {SoftwareProjectInterface} from "@/components/software-project/SoftwareProject";
 
-interface ProjectMockupInterface {
-    metadata: ProjectInterface;
-    repoName: string
-}
-
-const ProductMockups: ProjectMockupInterface[] = [
+const ProductMockups: SoftwareProjectInterface[] = [
     {
-        metadata: {
+        project: {
             projectName: "CharlemagneDB",
             projectBrief: "CharlemagneDB is an website for a concept database platform that is AI oriented in its development process to automate many of the reduntant tasks in database configuration for applications.\n",
-            projectSourceCodeLink: "https://github.com/mikeyfennelly1/CharlamagneDB",
             technologies: ["React", "GSAP", "TailwindCSS", "Figma", "Adobe XD", "Docker", "Framer Motion", "Firebase"],
             startDate: "September 2023",
             endDate: "April 2024"
         },
-        repoName: "CharlamagneDB"
+        repo: {
+            repoName: "brainTumorClassifier",
+            description: "A database prototype website created in Tailwind CSS, GSAP and React.\n",
+            repoURL: "https://github.com/mikeyfennelly1/CharlamagneDB"
+        }
     },
     {
-        metadata: {
+        project: {
             projectName: "Brain Tumor Classifier",
             projectBrief: "This project is an image classifier that uses a convolutional neural network to classify brain scans, predicting if patients have brain tumors.\n",
             projectSourceCodeLink: "https://github.com/mikeyfennelly1/brainTumorClassifier",
             technologies: ["Python", "Tensorflow", "Keras", "OpenCV", "Matplotlib", "Pandas"],
-            startDate: "September 2023",
-            endDate: "April 2024"
+            startDate: "April 2023",
+            endDate: "April 2023"
         },
-        repoName: "brainTumorClassifier"
+        repo: {
+            repoName: "brainTumorClassifier",
+            description: "A convolutional deep neural network for brain scan classification.\n",
+            repoURL: "https://github.com/mikeyfennelly1/brainTumorClassifier"
+        }
     },
 ]
 
@@ -42,18 +45,23 @@ export default function Product() {
                 {ProductMockups.map((p) => (
                     <div key={Math.random()} className={"project-columns"}>
                         <Project
-                            startDate={p.metadata.startDate}
-                            endDate={p.metadata.endDate}
-                            key={p.repoName}
-                            projectName={p.metadata.projectName}
-                            projectBrief={p.metadata.projectBrief}
-                            projectSourceCodeLink={p.metadata.projectSourceCodeLink}
-                        ></Project>
-                        {/*<GithubRepo repoName={p.repoName} technologies={p.metadata.technologies}*/}
-                        {/*></GithubRepo>*/}
+                            startDate={p.project.startDate}
+                            endDate={p.project.endDate}
+                            key={Math.random()}
+                            projectName={p.project.projectName}
+                            projectBrief={p.project.projectBrief}
+                            projectSourceCodeLink={p.project.projectSourceCodeLink}
+                        />
+                        <GithubRepo
+                            technologies={p.project.technologies}
+                            key={Math.random()}
+                            repoName={p.repo.repoName}
+                            description={""}
+                            repoURL={p.repo.repoURL}>
+                        </GithubRepo>
                     </div>
-
                 ))}
+
             </section>
 
         </>
