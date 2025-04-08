@@ -15,7 +15,7 @@ export default function Hero() {
                 </div>
                 <ArrowLink href={'/about-me'} label={'About Me'}></ArrowLink>
 
-                <section>
+                <section id={"cta-cards-section"}>
                     <div className={"cta-cards-container"}>
                         <CTACard href={'/product'} title={'Product Mockups'} icon={productIcon} brief={'My journey in tech started from wanting to create great products. Check out how I have maintained this perspective.'} arrowLinkTitle={'Product Mockups'} />
                         <CTACard href={'/linux-kernel-projects'} title={'Linux Kernel Projects'} icon={codeIconSVG} brief={'In late 2024 I started becoming interested in Linux related technology and products - mostly around container technology.'} arrowLinkTitle={'Linux Kernel Projects'} />
