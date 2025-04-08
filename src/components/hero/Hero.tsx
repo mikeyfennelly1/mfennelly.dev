@@ -19,8 +19,8 @@ export default function Hero() {
                     <div className={"cta-cards-container"}>
                         <CTACard href={'/product'} title={'Product Mockups'} icon={productIcon} brief={'My journey in tech started from wanting to create great products. Check out how I have maintained this perspective.'} arrowLinkTitle={'Product Mockups'} />
                         <CTACard href={'/linux-kernel-projects'} title={'Linux Kernel Projects'} icon={codeIconSVG} brief={'In late 2024 I started becoming interested in Linux related technology and products - mostly around container technology.'} arrowLinkTitle={'Linux Kernel Projects'} />
-                        <CTACard href={'/other-software-projects'} title={'General Software Projects'} icon={codeIconSVG} brief={'Some cool projects that I have made along the way.'} arrowLinkTitle={'General software projects'} />
-                        <CTACard href={'/content-creation'} title={'Content Creation Projects'} icon={videoIconSVG} brief={'In summer of 2022 I started a YouTube channel as an exercise in learning about brand visuals.'} arrowLinkTitle={'Content Creation projects'} />
+                        <CTACard href={'/other-software-projects'} title={'General Software Projects'} icon={codeIconSVG} brief={'Some cool projects that I have made along the way.'} arrowLinkTitle={'General Software Projects'} />
+                        <CTACard href={'/content-creation'} title={'Content Creation Projects'} icon={videoIconSVG} brief={'In summer of 2022 I started a YouTube channel as an exercise in learning about brand visuals.'} arrowLinkTitle={'Content Creation Projects'} />
                     </div>
                 </section>
 
