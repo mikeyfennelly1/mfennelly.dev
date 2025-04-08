@@ -6,7 +6,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     container:
       image: node:20.10.0-alpine
@@ -29,24 +28,24 @@ jobs:
       - name: Install NPM packages
         run: npm install
 
-  - name: Build webpage
-    run: |
-      echo "mfennelly.dev" > public/CNAME
-      npx next build && npx next export
+      - name: Build webpage
+        run: |
+          echo "mfennelly.dev" > public/CNAME
+          npx next build && npx next export
 
-  - name: Clone github-pages branch
-    run: git clone -b github-pages https://$GHA_PAT@github.com/mikeyfennelly1/mfennelly.dev/ github-pages
+      - name: Clone github-pages branch
+        run: git clone -b github-pages https://$GHA_PAT@github.com/mikeyfennelly1/mfennelly.dev/ github-pages
 
-  - name: Copy website to github-pages branch
-    run: |
-      rsync -av --progress ./out/ github-pages --delete
-      touch github-pages/.nojekyll
+      - name: Copy website to github-pages branch
+        run: |
+          rsync -av --progress ./out/ github-pages --delete
+          touch github-pages/.nojekyll
 
-  - name: Push github-pages branch changes
-    run: |
-      git config --global user.email "mikeyp.fennelly@gmail.com"
-      git config --global user.name "Mikey Fennelly"
-      cd github-pages
-      git add --all
-      git commit -m "committing all" || echo "No changes to commit"
-      git push https://$GHA_PAT@github.com/mikeyfennelly1/mfennelly.dev/ github-pages
+      - name: Push github-pages branch changes
+        run: |
+          git config --global user.email "mikeyp.fennelly@gmail.com"
+          git config --global user.name "Mikey Fennelly"
+          cd github-pages
+          git add --all
+          git commit -m "committing all" || echo "No changes to commit"
+          git push https://$GHA_PAT@github.com/mikeyfennelly1/mfennelly.dev/ github-pages
