@@ -47,6 +47,7 @@ jobs:
 
       - name: Push github-pages branch changes
         run: |
+          cd github-pages
           git config --global user.email "mikeyp.fennelly@gmail.com"
           git config --global user.name "Mikey Fennelly"
           cd github-pages
