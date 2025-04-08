@@ -47,10 +47,11 @@ jobs:
 
       - name: Push github-pages branch changes
         run: |
+          tree
           cd github-pages
           git config --global user.email "mikeyp.fennelly@gmail.com"
           git config --global user.name "Mikey Fennelly"
-          cd github-pages
+          pwd
           git add --all
           git commit -m "committing all" || echo "No changes to commit"
           git push https://$GHA_PAT@github.com/mikeyfennelly1/mfennelly.dev/ github-pages
