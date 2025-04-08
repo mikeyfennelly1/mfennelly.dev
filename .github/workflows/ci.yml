@@ -31,7 +31,7 @@ jobs:
       - name: Build webpage
         run: |
           echo "mfennelly.dev" > public/CNAME
-          npx next build && npx next export
+          npx next build
 
       - name: Clone github-pages branch
         run: git clone -b github-pages https://$GHA_PAT@github.com/mikeyfennelly1/mfennelly.dev/ github-pages
