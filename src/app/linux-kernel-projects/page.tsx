@@ -9,7 +9,7 @@ const LinuxKernelProjectsInfo: SoftwareProjectInterface[] = [
             projectBrief: "mrun (mike's runtime) is low-level OCI-compliant container runtime. I have been learning a lot about advanced Linux Kernel features such as namespaces and cgroups, virtual filesystems, virtual networking, seccomp, and all things process isolation. I'm also learning a lot about OCI (Open Container Initiative) specifications so that my project complies with industry standards for runtimes, images, etc. \n\n",
             technologies: ["Linux", "Containerization", "Go", "C"],
             startDate: "September 2023",
-            endDate: "April 2024"
+            endDate: "Current"
         },
         repo: {
             repoName: "mrun",
