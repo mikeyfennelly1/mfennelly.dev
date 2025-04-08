@@ -1,10 +1,8 @@
 "use client"
 
-import Project, {ProjectInterface} from "@/components/projects/project/Project";
-import GithubRepo, {RepoInterface} from "@/components/github-repo-component/GithubRepo";
-import {SoftwareProjectInterface} from "@/components/software-project/SoftwareProject";
+import {SoftwareProjectInterface, SoftwareProjects} from "@/components/software-project/SoftwareProject";
 
-const LinuxKernelProjects: SoftwareProjectInterface[] = [
+const LinuxKernelProjectsInfo: SoftwareProjectInterface[] = [
     {
         project: {
             projectName: "mrun",
@@ -50,31 +48,15 @@ const LinuxKernelProjects: SoftwareProjectInterface[] = [
 
 ];
 
-export default function SoftwareProjects() {
+export default function LinuxKernelProjects() {
     return (
         <>
             <section>
                 <h1 className={"large-padding-gap-top"}>Linux Kernel Projects</h1>
                 <p className={"small-separator medium-bottom-separator"}>Low level operating system technology is a topic that I have been getting very interested in since beginning college. Mark Burkley is a  man who has had huge influence on my work since starting college. This interest of mine has been largely fostered by Mark (perhaps unbeknownst to himself) so I have to give him his flowers for being an inspiration to some of the following work.</p>
-                {LinuxKernelProjects.map((p) => (
-                    <div key={Math.random()} className={"project-columns"}>
-                        <Project
-                            startDate={p.project.startDate}
-                            endDate={p.project.endDate}
-                            key={Math.random()}
-                            projectName={p.project.projectName}
-                            projectBrief={p.project.projectBrief}
-                            projectSourceCodeLink={p.project.projectSourceCodeLink}
-                        />
-                        <GithubRepo
-                            technologies={p.project.technologies}
-                            key={Math.random()}
-                            repoName={p.repo.repoName}
-                            description={""}
-                            repoURL={p.repo.repoURL}>
-                        </GithubRepo>
-                    </div>
-                ))}
+                <SoftwareProjects
+                    projects={LinuxKernelProjectsInfo}
+                ></SoftwareProjects>
             </section>
         </>
     )

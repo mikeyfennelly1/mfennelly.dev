@@ -1,35 +1,47 @@
 "use client"
 
-import Project, {ProjectInterface} from "@/components/projects/project/Project";
-import GithubRepo from "@/components/github-repo-component/GithubRepo";
+import {ProjectInterface} from "@/components/projects/project/Project";
+import {
+    SoftwareProjectInterface,
+    SoftwareProjects,
+    SoftwareProjectsInterface
+} from "@/components/software-project/SoftwareProject";
 
 interface OtherSoftwareProjectsInterface {
     metadata: ProjectInterface;
     repoName: string;
 }
 
-const OtherSoftwareProjects: OtherSoftwareProjectsInterface[] = [
+const OtherSoftwareProjects: SoftwareProjectInterface[] = [
     {
-        metadata: {
+        project: {
             projectName: "Thread Pooled Server",
             projectBrief: "A multithreaded server to demonstrate the use of a character device. Written in C.",
-            projectSourceCodeLink: "https://github.com/mikeyfennelly1/os--char-dev--u3",
             technologies: ["Linux", "C", "Concurrent Programming"],
-            startDate: "September 2023",
-            endDate: "April 2024"
+            startDate: "March 2023",
+            endDate: "March 2025"
         },
-        repoName: "os--char-dev--u3"
+        repo: {
+            repoName: "os--char-dev--u3",
+            description: "Third iteration of the user space application to demonstrate usage of the character device\n",
+            repoURL: "https://github.com/mikeyfennelly1/os--char-dev--u3",
+        }
     },
     {
-        metadata: {
+        project: {
             projectName: "mfennelly.dev",
             projectBrief: "The website you are on right now!",
             projectSourceCodeLink: "https://github.com/mikeyfennelly1/mfennelly.dev",
-            technologies: ["TypeScript", "Next.js", "REST"],
-            startDate: "September 2023",
-            endDate: "April 2024"
+            technologies: ["TypeScript", "Next.js"],
+            startDate: "April 2025",
+            endDate: "April 2025"
         },
-        repoName: "mfennelly.dev"
+        repo: {
+            repoName: "mfennelly.dev",
+            description: "Source for my personal website\n",
+            repoURL: "https://github.com/mikeyfennelly1/mfennelly.dev",
+        }
+
     },
 ]
 
@@ -39,25 +51,9 @@ export default function Page() {
             <section>
                 <h1 className={"large-padding-gap-top"}>Other Software Projects</h1>
                 <p className={"small-separator medium-bottom-separator"}>Some other software projects.</p>
-                {OtherSoftwareProjects.map((p) => (
-                    <div key={Math.random()} className={"project-columns"}>
-                        <Project
-                            startDate={p.metadata.startDate}
-                            endDate={p.metadata.startDate}
-                            key={Math.random()}
-                            projectName={p.metadata.projectName}
-                            projectBrief={p.metadata.projectBrief}
-                            projectSourceCodeLink={p.metadata.projectSourceCodeLink}
-                            technologies={p.metadata.technologies}
-                        />
-                        <GithubRepo
-                            key={Math.random()}
-                            repoName={p.repoName} description={""} repoURL={""}>
-                        </GithubRepo>
-                    </div>
-                ))}
+                <SoftwareProjects projects={OtherSoftwareProjects}
+                ></SoftwareProjects>
             </section>
-
         </>
     )
 }
