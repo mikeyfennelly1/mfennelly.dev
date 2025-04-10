@@ -7,6 +7,35 @@ import {SoftwareProjectInterface} from "@/components/software-project/SoftwarePr
 const ProductMockups: SoftwareProjectInterface[] = [
     {
         project: {
+            projectName: "eefenn.com",
+            projectBrief: "The website for eefenn. The source code for this website is closed, so unfortunately it can't be linked here. It is a static website, created with NEXT.js with TypeScript, and served from AWS S3 & AWS CloudFront.\n",
+            technologies: ["NEXT.js", "CSS", "TypeScript", "AWS", "Figma"],
+            startDate: "April 2025",
+            endDate: "April 2025"
+        },
+        repo: {
+            repoName: "eefenn.com",
+            description: "Website for eefenn.com. Created with NEXT/TypeScript\n",
+            repoURL: "/"
+        }
+    },
+    {
+        project: {
+            projectName: "mfennelly.dev",
+            projectBrief: "The website you are on right now! This is also a static website with NEXT.js and TypeScript. This is served through GitHub pages - which is more or less the same setup as the S3 & Cloudfront combo - just a little more convenient.",
+            projectSourceCodeLink: "https://github.com/mikeyfennelly1/mfennelly.dev",
+            technologies: ["TypeScript", "Next.js", "Figma"],
+            startDate: "April 2025",
+            endDate: "April 2025"
+        },
+        repo: {
+            repoName: "mfennelly.dev",
+            description: "Source for my personal website\n",
+            repoURL: "https://github.com/mikeyfennelly1/mfennelly.dev",
+        }
+    },
+    {
+        project: {
             projectName: "CharlemagneDB",
             projectBrief: "CharlemagneDB is an website for a concept database platform that is AI oriented in its development process to automate many of the reduntant tasks in database configuration for applications.\n",
             technologies: ["React", "GSAP", "TailwindCSS", "Figma", "Adobe XD", "Docker", "Framer Motion", "Firebase"],
@@ -14,24 +43,24 @@ const ProductMockups: SoftwareProjectInterface[] = [
             endDate: "April 2024"
         },
         repo: {
-            repoName: "brainTumorClassifier",
+            repoName: "CharlemagneDB",
             description: "A database prototype website created in Tailwind CSS, GSAP and React.\n",
             repoURL: "https://github.com/mikeyfennelly1/CharlamagneDB"
         }
     },
     {
         project: {
-            projectName: "Brain Tumor Classifier",
-            projectBrief: "This project is an image classifier that uses a convolutional neural network to classify brain scans, predicting if patients have brain tumors.\n",
-            projectSourceCodeLink: "https://github.com/mikeyfennelly1/brainTumorClassifier",
-            technologies: ["Python", "Tensorflow", "Keras", "OpenCV", "Matplotlib", "Pandas"],
-            startDate: "April 2023",
-            endDate: "April 2023"
+            projectName: "points-lab",
+            projectBrief: "A website for a concept SaaS product that helps Leaving Cert students study for their exams.",
+            projectSourceCodeLink: "https://github.com/mikeyfennelly1/points-lab",
+            technologies: ["HTML5", "CSS", "Adobe Photoshop", "Adobe Illustrator"],
+            startDate: "June 2023",
+            endDate: "November 2023"
         },
         repo: {
-            repoName: "brainTumorClassifier",
-            description: "A convolutional deep neural network for brain scan classification.\n",
-            repoURL: "https://github.com/mikeyfennelly1/brainTumorClassifier"
+            repoName: "mfennelly.dev",
+            description: "Source for my personal website\n",
+            repoURL: "https://github.com/mikeyfennelly1/points-lab",
         }
     },
 ]

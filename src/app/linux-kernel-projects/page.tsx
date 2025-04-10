@@ -19,20 +19,6 @@ const LinuxKernelProjectsInfo: SoftwareProjectInterface[] = [
     },
     {
         project: {
-            projectName: "eefenn-cli",
-            projectBrief: "A command-line tool for managing scripts and automation workflows on Ubuntu. I created this tool because it was something that I wanted for some repetitive tasks that were cropping up with eefenn (hence why it is creatively named eefenn-cli). This command-line tool is essentially a command-line manager for local automation tasks. It provides a simple interface to create, manage, and run scripts.",
-            technologies: ["Linux", "Automation", "Go"],
-            startDate: "March 2024",
-            endDate: "April 2024"
-        },
-        repo: {
-            repoName: "eefenn-cli",
-            description: "A tool for managing automation via the shell. Created for Debian/Ubuntu.\n",
-            repoURL: "https://github.com/mikeyfennelly1/eefenn-cli"
-        }
-    },
-    {
-        project: {
             projectName: "os--char-dev--lkm",
             projectBrief: "This project was an end-of-block project in college for Operating Systems with Mark. This project was intended to be a demonstration of some of the topics covered; hence, it is a loadable kernel module with an accompanying user-space application. The project that I was a part of was a character device driver to get system information from kernel space and a multithreaded server to serve the data in JSON format to client processes – both written in C.",
             technologies: ["Linux", "Device Drivers", "C", "Unit Testing"],
@@ -45,7 +31,20 @@ const LinuxKernelProjectsInfo: SoftwareProjectInterface[] = [
             repoURL: "https://github.com/mikeyfennelly1/os--char-dev--lkm"
         }
     },
-
+    {
+        project: {
+            projectName: "simple-ns-info",
+            projectBrief: "A simple loadable kernel module to retrieve information about the namespaces on a host (an essential kernel feature in container technology). This can be inconvenient information to try and get from userspace, so the idea of this module is to make it a little more clean and convenient.",
+            technologies: ["Linux", "Device Drivers", "C", "Unit Testing"],
+            startDate: "February 2024",
+            endDate: "February 2024"
+        },
+        repo: {
+            repoName: "os--char-dev--lkm",
+            description: "Sysinfo character device for operating systems major\n",
+            repoURL: "https://github.com/mikeyfennelly1/os--char-dev--lkm"
+        }
+    },
 ];
 
 export default function LinuxKernelProjects() {

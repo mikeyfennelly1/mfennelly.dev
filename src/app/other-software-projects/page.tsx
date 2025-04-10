@@ -15,6 +15,20 @@ interface OtherSoftwareProjectsInterface {
 const OtherSoftwareProjects: SoftwareProjectInterface[] = [
     {
         project: {
+            projectName: "eefenn-cli",
+            projectBrief: "A command-line tool for managing scripts and automation workflows on Ubuntu. I created this tool because it was something that I wanted for some repetitive tasks that were cropping up with eefenn (hence why it is creatively named eefenn-cli). This command-line tool is essentially a command-line manager for local automation tasks. It provides a simple interface to create, manage, and run scripts.",
+            technologies: ["Linux", "Automation", "Go"],
+            startDate: "March 2024",
+            endDate: "April 2024"
+        },
+        repo: {
+            repoName: "eefenn-cli",
+            description: "A tool for managing automation via the shell. Created for Debian/Ubuntu.\n",
+            repoURL: "https://github.com/mikeyfennelly1/eefenn-cli"
+        }
+    },
+    {
+        project: {
             projectName: "Thread Pooled Server",
             projectBrief: "A multithreaded server to demonstrate the use of a character device. Written in C.",
             technologies: ["Linux", "C", "Concurrent Programming"],
@@ -29,19 +43,18 @@ const OtherSoftwareProjects: SoftwareProjectInterface[] = [
     },
     {
         project: {
-            projectName: "mfennelly.dev",
-            projectBrief: "The website you are on right now!",
-            projectSourceCodeLink: "https://github.com/mikeyfennelly1/mfennelly.dev",
-            technologies: ["TypeScript", "Next.js"],
-            startDate: "April 2025",
-            endDate: "April 2025"
+            projectName: "Brain Tumor Classifier",
+            projectBrief: "This project is an image classifier that uses a convolutional neural network to classify brain scans, predicting if patients have brain tumors.\n",
+            projectSourceCodeLink: "https://github.com/mikeyfennelly1/brainTumorClassifier",
+            technologies: ["Python", "Tensorflow", "Keras", "OpenCV", "Matplotlib", "Pandas"],
+            startDate: "April 2023",
+            endDate: "April 2023"
         },
         repo: {
-            repoName: "mfennelly.dev",
-            description: "Source for my personal website\n",
-            repoURL: "https://github.com/mikeyfennelly1/mfennelly.dev",
+            repoName: "brainTumorClassifier",
+            description: "A convolutional deep neural network for brain scan classification.\n",
+            repoURL: "https://github.com/mikeyfennelly1/brainTumorClassifier"
         }
-
     },
 ]
 
