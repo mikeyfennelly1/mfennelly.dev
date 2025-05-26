@@ -63,7 +63,7 @@ export default function Navbar({links}: NavbarInterface) {
             <nav className={isAtTop ? "" : "navbar-backdrop"} id={"mobile-slideout"}>
                 <div className={"mikey-logo"}>
                     <Link href={'/'}>
-                        <img style={{maxHeight: "40px"}} src="/mikey.jpg" alt=""/>
+                        <MFLogo></MFLogo>
                     </Link>
                 </div>
                 <NavContext.Provider value={{ isOpen, toggleMenu }}>
