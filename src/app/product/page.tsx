@@ -3,20 +3,37 @@
 import Project, {ProjectInterface} from "@/components/projects/project/Project";
 import GithubRepo from "@/components/github-repo-component/GithubRepo";
 import {SoftwareProjectInterface} from "@/components/software-project/SoftwareProject";
+import Link from "next/link";
+import {underline} from "next/dist/lib/picocolors";
 
 const ProductMockups: SoftwareProjectInterface[] = [
     {
         project: {
-            projectName: "eefenn.com",
-            projectBrief: "The website for eefenn. The source code for this website is closed, so unfortunately it can't be linked here. It is a static website, created with NEXT.js with TypeScript, and served from AWS S3 & AWS CloudFront.\n",
-            technologies: ["NEXT.js", "CSS", "TypeScript", "AWS", "Figma"],
-            startDate: "April 2025",
-            endDate: "April 2025"
+            projectName: "CharlemagneDB",
+            projectBrief: <>CharlemagneDB is a <Link href="https://mikeyfennelly1.github.io/CharlamagneDB/" target="_blank" className="underline">website</Link> for a concept database platform that is AI oriented in its development process to automate many of the reduntant tasks in database configuration for applications.</>,
+            technologies: ["React", "GSAP", "TailwindCSS", "Figma", "Adobe XD", "Docker", "Framer Motion", "Firebase"],
+            startDate: "September 2023",
+            endDate: "April 2024"
         },
         repo: {
-            repoName: "eefenn.com",
-            description: "Website for eefenn.com. Created with NEXT/TypeScript\n",
-            repoURL: "/"
+            repoName: "CharlemagneDB",
+            description: "A database prototype website created in Tailwind CSS, GSAP and React.\n",
+            repoURL: "https://github.com/mikeyfennelly1/CharlamagneDB"
+        }
+    },
+    {
+        project: {
+            projectName: "points-lab",
+            projectBrief: <>A <Link href="https://mikeyfennelly1.github.io/points-lab/" target="_blank" className="underline">website</Link> for a concept SaaS product that helps Leaving Cert students study for their exams.</>,
+            projectSourceCodeLink: "https://github.com/mikeyfennelly1/points-lab",
+            technologies: ["HTML5", "CSS", "Adobe Photoshop", "Adobe Illustrator"],
+            startDate: "June 2023",
+            endDate: "November 2023"
+        },
+        repo: {
+            repoName: "points-lab",
+            description: "Source for my personal website\n",
+            repoURL: "https://github.com/mikeyfennelly1/points-lab",
         }
     },
     {
@@ -36,31 +53,16 @@ const ProductMockups: SoftwareProjectInterface[] = [
     },
     {
         project: {
-            projectName: "CharlemagneDB",
-            projectBrief: "CharlemagneDB is an website for a concept database platform that is AI oriented in its development process to automate many of the reduntant tasks in database configuration for applications.\n",
-            technologies: ["React", "GSAP", "TailwindCSS", "Figma", "Adobe XD", "Docker", "Framer Motion", "Firebase"],
-            startDate: "September 2023",
-            endDate: "April 2024"
+            projectName: "eefenn.com",
+            projectBrief: <>The website for eefenn.com. The source code for this website is closed, so unfortunately it can't be linked here. It is a static website, created with NEXT.js with TypeScript, and served from AWS S3 & AWS CloudFront.</>,
+            technologies: ["NEXT.js", "CSS", "TypeScript", "AWS", "Figma"],
+            startDate: "April 2025",
+            endDate: "April 2025"
         },
         repo: {
-            repoName: "CharlemagneDB",
-            description: "A database prototype website created in Tailwind CSS, GSAP and React.\n",
-            repoURL: "https://github.com/mikeyfennelly1/CharlamagneDB"
-        }
-    },
-    {
-        project: {
-            projectName: "points-lab",
-            projectBrief: "A website for a concept SaaS product that helps Leaving Cert students study for their exams.",
-            projectSourceCodeLink: "https://github.com/mikeyfennelly1/points-lab",
-            technologies: ["HTML5", "CSS", "Adobe Photoshop", "Adobe Illustrator"],
-            startDate: "June 2023",
-            endDate: "November 2023"
-        },
-        repo: {
-            repoName: "mfennelly.dev",
-            description: "Source for my personal website\n",
-            repoURL: "https://github.com/mikeyfennelly1/points-lab",
+            repoName: "eefenn.com",
+            description: "Website for eefenn.com. Created with NEXT/TypeScript\n",
+            repoURL: "/"
         }
     },
 ]

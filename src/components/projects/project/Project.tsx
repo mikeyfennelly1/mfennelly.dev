@@ -1,5 +1,6 @@
 import "./project.css"
 import {GeistMono} from "geist/font/mono";
+import {ReactNode} from "react";
 
 export interface ProjectInterface {
     // the name of the project
@@ -9,7 +10,7 @@ export interface ProjectInterface {
     endDate: string;
 
     // a brief message of  what the project was about the project.
-    projectBrief: string;
+    projectBrief: ReactNode;
 
     // the technologies used in the creation of the project (languages, frameworks etc.)
     technologies?: string[];
