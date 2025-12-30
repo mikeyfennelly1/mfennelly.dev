@@ -40,9 +40,9 @@ const LinuxKernelProjectsInfo: SoftwareProjectInterface[] = [
             endDate: "February 2024"
         },
         repo: {
-            repoName: "os--char-dev--lkm",
+            repoName: "simple-ns-info",
             description: "Sysinfo character device for operating systems major\n",
-            repoURL: "https://github.com/mikeyfennelly1/os--char-dev--lkm"
+            repoURL: "https://github.com/mikeyfennelly1/simple-ns-info"
         }
     },
 ];
