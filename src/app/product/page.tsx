@@ -9,35 +9,6 @@ import {underline} from "next/dist/lib/picocolors";
 const ProductMockups: SoftwareProjectInterface[] = [
     {
         project: {
-            projectName: "eefenn.com",
-            projectBrief: <>The website for eefenn.com. The source code for this website is closed, so unfortunately it can't be linked here. It is a static website, created with NEXT.js with TypeScript, and served from AWS S3 & AWS CloudFront.</>,
-            technologies: ["NEXT.js", "CSS", "TypeScript", "AWS", "Figma"],
-            startDate: "April 2025",
-            endDate: "April 2025"
-        },
-        repo: {
-            repoName: "eefenn.com",
-            description: "Website for eefenn.com. Created with NEXT/TypeScript\n",
-            repoURL: "/"
-        }
-    },
-    {
-        project: {
-            projectName: "mfennelly.dev",
-            projectBrief: "The website you are on right now! This is also a static website with NEXT.js and TypeScript. This is served through GitHub pages - which is more or less the same setup as the S3 & Cloudfront combo - just a little more convenient.",
-            projectSourceCodeLink: "https://github.com/mikeyfennelly1/mfennelly.dev",
-            technologies: ["TypeScript", "Next.js", "Figma"],
-            startDate: "April 2025",
-            endDate: "April 2025"
-        },
-        repo: {
-            repoName: "mfennelly.dev",
-            description: "Source for my personal website\n",
-            repoURL: "https://github.com/mikeyfennelly1/mfennelly.dev",
-        }
-    },
-    {
-        project: {
             projectName: "CharlemagneDB",
             projectBrief: <>CharlemagneDB is a <Link href="https://mikeyfennelly1.github.io/CharlamagneDB/" target="_blank" className="underline">website</Link> for a concept database platform that is AI oriented in its development process to automate many of the reduntant tasks in database configuration for applications.</>,
             technologies: ["React", "GSAP", "TailwindCSS", "Figma", "Adobe XD", "Docker", "Framer Motion", "Firebase"],
@@ -63,6 +34,35 @@ const ProductMockups: SoftwareProjectInterface[] = [
             repoName: "points-lab",
             description: "Source for my personal website\n",
             repoURL: "https://github.com/mikeyfennelly1/points-lab",
+        }
+    },
+    {
+        project: {
+            projectName: "mfennelly.dev",
+            projectBrief: "The website you are on right now! This is also a static website with NEXT.js and TypeScript. This is served through GitHub pages - which is more or less the same setup as the S3 & Cloudfront combo - just a little more convenient.",
+            projectSourceCodeLink: "https://github.com/mikeyfennelly1/mfennelly.dev",
+            technologies: ["TypeScript", "Next.js", "Figma"],
+            startDate: "April 2025",
+            endDate: "April 2025"
+        },
+        repo: {
+            repoName: "mfennelly.dev",
+            description: "Source for my personal website\n",
+            repoURL: "https://github.com/mikeyfennelly1/mfennelly.dev",
+        }
+    },
+    {
+        project: {
+            projectName: "eefenn.com",
+            projectBrief: <>The website for eefenn.com. The source code for this website is closed, so unfortunately it can't be linked here. It is a static website, created with NEXT.js with TypeScript, and served from AWS S3 & AWS CloudFront.</>,
+            technologies: ["NEXT.js", "CSS", "TypeScript", "AWS", "Figma"],
+            startDate: "April 2025",
+            endDate: "April 2025"
+        },
+        repo: {
+            repoName: "eefenn.com",
+            description: "Website for eefenn.com. Created with NEXT/TypeScript\n",
+            repoURL: "/"
         }
     },
 ]
