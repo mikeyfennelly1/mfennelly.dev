@@ -26,7 +26,7 @@ const Repo = ({ repoName, description, technologies, topics, repoURL }: RepoInte
                             </div>
                             <div className={"repo-project-source-code-container"}>
                                 <Link href={repoURL} target={"_blank"}>
-                                    <button className={"repo-project-source-code-button"}>Source Code</button>
+                                    <button className={"repo-project-source-code-button"}><img src="/github-mark.svg" width="16" style={{display: "inline", marginRight: "3px"}}/> Source Code</button>
                                 </Link>
                             </div>
                         </div>
