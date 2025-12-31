@@ -31,6 +31,11 @@
     justify-content: space-between;
 }
 
+.cta-card-container svg {
+    display: inline;
+    margin-right: 5px;
+}
+
 .cta-cards-container a {
     max-width: 600px;
 }
