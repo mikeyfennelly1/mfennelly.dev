@@ -12,17 +12,17 @@ export default function Hero() {
                 <div className={"medium-separator"}>
                     <p><Link href={"https://software-engineering.ie"} target={"_blank"} className={"bold accent1"}>Immersive Software Engineering [ISE]</Link> student (2nd year) at the University of Limerick, Ireland.</p>
                     <br/>
-                    <p>I'm a passionate technologist with a keen interest in Software Engineering, Artificial Intelligence and video creation and graphics.</p>
+                    <p>I'm a passionate technologist with a keen interest in Software Engineering, Artificial Intelligence and Graphical Content Creation.</p>
                     <br/>
                     <p className="bold">When I'm not doing these things, I'm thinking about them!</p>
                 </div>
 
                 <section id={"cta-cards-section"}>
                     <div className={"cta-cards-container"}>
-                        <CTACard href={'/product'} title={'Product Mockups'} icon={productIcon} brief={'My journey in tech started from wanting to create great products. Check out how I have maintained this perspective.'} arrowLinkTitle={'Product Mockups'} />
-                        <CTACard href={'/linux-kernel-projects'} title={'Linux Kernel Projects'} icon={codeIconSVG} brief={'In late 2024 I started becoming interested in Linux related technology and products - mostly around container technology.'} arrowLinkTitle={'Linux Kernel Projects'} />
+                        <CTACard href={'/product'} title={'Product Mockups'} icon={productIcon} brief={'My passion for tech started with wanting to create great products, originally on Shopify.'} arrowLinkTitle={'Product Mockups'} />
+                        <CTACard href={'/linux-kernel-projects'} title={'Linux Kernel Projects'} icon={codeIconSVG} brief={'In late 2024 I become very interested in Linux related technologies, and in particular those Linux techs that make cloud native computing possible e.g. containerization etc.'} arrowLinkTitle={'Linux Kernel Projects'} />
                         <CTACard href={'/other-software-projects'} title={'General Software Projects'} icon={codeIconSVG} brief={'Some cool projects that I have made along the way.'} arrowLinkTitle={'General Software Projects'} />
-                        <CTACard href={'/content-creation'} title={'Content Creation Projects'} icon={videoIconSVG} brief={'In summer of 2022 I started a YouTube channel as an exercise in learning about brand visuals.'} arrowLinkTitle={'Content Creation Projects'} />
+                        <CTACard href={'/content-creation'} title={'Graphical Content Creation'} icon={videoIconSVG} brief={'In 2022 I started a YouTube channel as a way to learn some of the tools used to create great brand visuals.'} arrowLinkTitle={'Graphical Content Creation Projects'} />
                     </div>
                 </section>
 
