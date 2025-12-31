@@ -5,6 +5,10 @@
     min-height: 300px;
 }
 
+.repo-card a {
+    text-decoration: none;
+}
+
 .skeleton {
     min-height: 10px;
     background-color: #efefef;

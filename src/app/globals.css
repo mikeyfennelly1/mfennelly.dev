@@ -340,3 +340,7 @@ h4 {
 .midland-steel-project-circle {
   margin: 10px 0;
 }
+
+a {
+    text-decoration: underline;
+}
