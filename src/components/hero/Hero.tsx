@@ -9,11 +9,13 @@ export default function Hero() {
         <>
             <div className={"large-separator"}>
                 <h1 className={`${GeistSans.className}`} style={{fontSize: "5rem"}}>Mikey Fennelly</h1>
-                <div className={"small-separator"}>
-                    <p>I am currently studying <Link href={"https://software-engineering.ie"} target={"_blank"} className={"bold accent1"}>Immersive Software Engineering [ISE]</Link> at the University of Limerick. I am a passionate technologist with a keen interest in Software Engineering, Artificial Intelligence and video creation and graphics.</p>
-                    <p className={"medium-separator"}>When I'm not doing these things, I'm thinking about them!</p>
+                <div className={"medium-separator"}>
+                    <p><Link href={"https://software-engineering.ie"} target={"_blank"} className={"bold accent1"}>Immersive Software Engineering [ISE]</Link> student (2nd year) at the University of Limerick, Ireland.</p>
+                    <br/>
+                    <p>I'm a passionate technologist with a keen interest in Software Engineering, Artificial Intelligence and video creation and graphics.</p>
+                    <br/>
+                    <p className="bold">When I'm not doing these things, I'm thinking about them!</p>
                 </div>
-                <ArrowLink href={'/about-me'} label={'About Me'}></ArrowLink>
 
                 <section id={"cta-cards-section"}>
                     <div className={"cta-cards-container"}>
