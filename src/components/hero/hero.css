@@ -38,6 +38,7 @@
 
 .cta-cards-container a {
     max-width: 600px;
+    text-decoration: none;
 }
 
 .cta-card-container {

@@ -17,8 +17,8 @@ export interface RepoInterface {
 const Repo = ({ repoName, description, technologies, topics, repoURL }: RepoInterface) => {
     return (
         <>
-            <Link href={repoURL}>
-                <div className="repo-card repo-card-drop-shadow">
+            <div className="repo-card repo-card-drop-shadow">
+                <Link href={repoURL}>
                     <div className={"top-card"}>
                         <img className={"repo-owner-avatar"} src='/profile-photo.png' alt=""/>
                         <div className={"repo-title-owner-container"}>
@@ -44,8 +44,8 @@ const Repo = ({ repoName, description, technologies, topics, repoURL }: RepoInte
                             <span key={Math.random()} className={" flex"}>{tech}</span>
                         ))}
                     </div>
-                </div>
-            </Link>
+                </Link>
+            </div>
         </>
     );
 };
