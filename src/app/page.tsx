@@ -33,7 +33,7 @@ export default function Home() {
                             key={Math.random()}
                             projectBrief={brief}
                             bulletPointSize={5}
-                            circleColour={"#161616"}
+                            circleColour={"#ffffff"}
                         ></MidlandSteelProject>
                     ))}
                 </div>
