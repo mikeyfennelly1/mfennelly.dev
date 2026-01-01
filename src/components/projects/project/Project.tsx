@@ -34,11 +34,7 @@ export default function Project({projectName, projectBrief, projectSourceCodeLin
     return (
         <>
             <div className={"medium-separator"}>
-                {projectSourceCodeLink ?
-                    <h3 className={`condense accent2 ${GeistMono.className}`}>{projectName}</h3>
-                    :
-                    <h3 className={""}>{projectName}</h3>
-                }
+                    <h3 className={`condense ${GeistMono.className}`}>{projectName}</h3>
                 {(startDate && endDate)?
                     <h4>{startDate} - {endDate}</h4>
                 :
