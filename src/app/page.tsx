@@ -15,7 +15,7 @@ export default function Home() {
                             startDate: "September 2024",
                             endDate: "Present",
                             description: "While in college, I started eefenn as a way to market the skillset that I'd been developing while doing some freelance work. Worked directly with customers to deliver full stack applications from design, frontend development, backend development and to provisioning infrastructure on AWS. I worked to create a healthy development lifecycle that included CI/CD pipelines to automate test and deployment operations. I learned a lot about project management and managing priority of tasks etc.",
-                            companyLink: "https://eefenn.com"
+                            companyLink: "#"
                         },
                         {
                             jobTitle: "Software Technician",
