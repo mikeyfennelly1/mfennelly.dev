@@ -38,21 +38,6 @@ const ProductMockups: SoftwareProjectInterface[] = [
     },
     {
         project: {
-            projectName: "mfennelly.dev",
-            projectBrief: "The website you are on right now! This is also a static website with NEXT.js and TypeScript. This is served through GitHub pages - which is more or less the same setup as the S3 & Cloudfront combo - just a little more convenient.",
-            projectSourceCodeLink: "https://github.com/mikeyfennelly1/mfennelly.dev",
-            technologies: ["TypeScript", "Next.js", "Figma"],
-            startDate: "April 2025",
-            endDate: "April 2025"
-        },
-        repo: {
-            repoName: "mfennelly.dev",
-            description: "Source for my personal website\n",
-            repoURL: "https://github.com/mikeyfennelly1/mfennelly.dev",
-        }
-    },
-    {
-        project: {
             projectName: "eefenn.com",
             projectBrief: <>The website for eefenn.com. The source code for this website is closed, so unfortunately it can't be linked here. It is a static website, created with NEXT.js with TypeScript, and served from AWS S3 & AWS CloudFront.</>,
             technologies: ["NEXT.js", "CSS", "TypeScript", "AWS", "Figma"],
