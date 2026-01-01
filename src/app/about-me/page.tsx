@@ -44,8 +44,9 @@ const AboutMeSections: AboutMeSectionInterface[] = [
                 &nbsp;and <Link href="https://www.blender.org/" target="_blank">Blender</Link>.
             </p>
             <p>
-                In the summer of 2022 I began a YouTube channel called "Sport Cartel". Making a YouTube channel was a great way to hone my story telling skills, as well another
+                In the summer of 2022 I began a YouTube channel called "Sport Cartel". Making a YouTube channel was a great way for me to hone my story telling skills, as well another
                 avenue for me to exercise my creativity and technical skills using <Link href={"https://www.adobe.com/"} target="_blank">Adobe Creative Suite</Link> etc.
+                Check out some of my videos on the <Link href="/content-creation">Content Creation Projects Page</Link>.
             </p>
         </>,
     }
