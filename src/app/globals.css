@@ -162,8 +162,12 @@ h3 {
 }
 
 .invert-colors {
-  background-color: #f3f3f3;
-  color: #161616;
+  background-color: #1c2331;
+  color: #ffffff;
+}
+
+.accent2 {
+  color: #D2B48C;
 }
 
 p {
