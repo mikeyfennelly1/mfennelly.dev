@@ -6,6 +6,7 @@ import {createContext, useEffect, useState} from "react";
 import Link from "next/link";
 import NavToggleButton from "@/components/navbar/nav-toggle-button/NavToggleButton";
 import NavSlideout from "@/components/navbar/nav-slideout/NavSlideout";
+import {NavigationMenuDemo} from "@/components/navbar/nav-menu/nav-menu";
 
 export type link = {
     href: string;
@@ -46,30 +47,21 @@ export default function Navbar({links}: NavbarInterface) {
 
     return (
         <>
-            <nav className={isAtTop ? "" : "navbar-backdrop"}>
+            <nav id={"parent-nav"} className={isAtTop ? "" : "navbar-backdrop"}>
                 <div className={"mikey-logo"}>
                     <Link href={'/'}>
                         <MFLogo></MFLogo>
                     </Link>
+                </div>
+                <div id={"mobile-slideout"}>
+                    <NavContext.Provider value={{ isOpen, toggleMenu }}>
+                        <NavToggleButton></NavToggleButton>
+                        <NavSlideout links={links}></NavSlideout>
+                    </NavContext.Provider>
                 </div>
                 <div id="navbar-center">
-                    {links.map((link, index) => (
-                        <a href={link.href} target={link.target} key={index} className="navbar-item">
-                        {link.text}
-                        </a>
-                    ))}
+                    <NavigationMenuDemo />
                 </div>
-            </nav>
-            <nav className={isAtTop ? "" : "navbar-backdrop"} id={"mobile-slideout"}>
-                <div className={"mikey-logo"}>
-                    <Link href={'/'}>
-                        <MFLogo></MFLogo>
-                    </Link>
-                </div>
-                <NavContext.Provider value={{ isOpen, toggleMenu }}>
-                    <NavToggleButton></NavToggleButton>
-                    <NavSlideout links={links}></NavSlideout>
-                </NavContext.Provider>
             </nav>
         </>
     )

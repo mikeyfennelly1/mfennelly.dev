@@ -5,9 +5,7 @@ import Testimonial from "@/components/experience/testimonial/Testimonial";
 export default function Home() {
     return (
         <>
-            <section className={"section-padding large-bottom-separator"}>
-                <Hero></Hero>
-            </section>
+            <Hero></Hero>
             <section id={"experience"} className={"section-padding large-bottom-separator invert-colors large-padding-y"}>
                 <Experience
                     experienceItems={[

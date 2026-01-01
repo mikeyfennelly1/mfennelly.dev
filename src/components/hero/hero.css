@@ -4,6 +4,31 @@
     justify-content: center;
 }
 
+#hero-image-container {
+    height: 500px;
+    min-width: 100vw;
+    left: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    overflow-y: clip;
+    z-index: -1;
+}
+
+@media screen and (max-width: 850px) {
+    #hero-image-container {
+        height: auto;
+        z-index: 1;
+    }
+}
+
+#hero-image {
+    position: absolute;
+    min-width: 100vw;
+}
+
 @media screen and (min-width: 1200px) {
     .cta-cards-container {
         grid-template-columns: 1fr 1fr;
