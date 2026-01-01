@@ -4,6 +4,7 @@ import Link from "next/link";
 type book = {
     title: string;
     author: string;
+    img?: string;
     bio: ReactNode;
 }
 
@@ -11,18 +12,24 @@ const books: book[] = [
     {
         title: "Steve Jobs",
         author: "Walter Isaacson",
+        img: "/bookshelf/Steve_Jobs.jpg",
         bio: <>
-            <p>
-                In January 2024 my uncle went to California for the 40th anniversary of the original Macintosh.
-                Why is that you ask? Well it turns out that my Uncle Frank Fennelly was an engineer on the original Mac team from 1982 to 1984
-                (wearing the light brown sweatshirt on the back right of <Link href="https://images.squarespace-cdn.com/content/v1/5235d1aae4b03309a86567e6/1379288523494-OZCW5YMVZXPNC17O174X/macteam.jpg" target="_blank" className="underline">this photo</Link>).
-                I had always known this growing up, and his trip to Palo Alto earlier this year prompted me to read more into Apple during his time there. It was very interesting to read the book and imagine the beginnings of consumer technology, but even cooler to hear stories from Uncle Fran that aren't written about in the book.
+            <p className="medium-bottom-separator">
+                In January 2024 my uncle Frank Fennelly went to California for the 40th anniversary of the launch of the original Macintosh.
+                Why is that, you ask? Well because he was an engineer on the <Link href="https://images.squarespace-cdn.com/content/v1/5235d1aae4b03309a86567e6/1379288523494-OZCW5YMVZXPNC17O174X/macteam.jpg" target="_blank" className="underline">original Mac team from 1982 to 1984</Link> (light brown sweater, back right corner).
             </p>
-            <br/>
-            <p>
-                My Uncle Paul Fennelly also worked at Apple as an engineer at the same time too, and worked on the Apple Lisa team. He too had stories of working at Apple during Silicon Valley's heyday and both of my uncles had stories of dealing with Steve Jobs himself. This book is brilliant to begin with, but the extra untold stories from my uncles made the whole story even better.
+            <p className="medium-bottom-separator">
+                I had known this growing up, but his trip to Palo Alto in 2024 prompted me to read more into the history of Apple during his time there. It was very interesting to read this book and imagine the beginnings of modern consumer technology, but even more cool to hear stories from Uncle Frank that aren't written about in the book e.g.
+                the fun stories where uncle Frank's boss had him working secretly in multiple offices so as to hide some covert work from the legendary Steve Jobs.
             </p>
-        </>,
+            <p className="medium-bottom-separator">
+                My Uncle Paul Fennelly also worked as an engineer at Apple during this time. He worked on the Apple Lisa team. He too had fun stories of working at Apple during Silicon Valley's heyday,
+                many of which also involved dealings with Steve Jobs and others (Jef Raskin, Andy Hertzfeld, Chris Espinosa etc).
+            </p>
+            <p>
+                This book is a fascinating read to begin with, but the extra untold stories from my uncles made the whole story even better.
+            </p>
+        </>
     },
     {
         title: "Ogilvy On Advertising\n",
@@ -84,7 +91,10 @@ function Books() {
             {books.map((book) => (
                 <section key={Math.random()}>
                     <h1>{book.title}<span style={{fontWeight: 200}}> - {book.author}</span></h1>
-                    <p>{book.bio}</p>
+                    <div className="medium-top-separator">
+                        <img src={book.img} style={{float: 'left', width: "200px", marginRight: '40px'}} alt="" />
+                        <p>{book.bio}</p>
+                    </div>
                 </section>
             ))}
         </>
