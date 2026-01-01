@@ -3,6 +3,7 @@
     padding: 30px;
     border-radius: 3px;
     min-height: 300px;
+    background-color: #ffffff;
 }
 
 .repo-card a {
