@@ -1,0 +1,4 @@
+
+div.books :first-child {
+    padding-top: 0;
+}

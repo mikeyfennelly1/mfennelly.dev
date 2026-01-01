@@ -1,3 +1,5 @@
+import "./bookshelf.css"
+
 import {ReactNode} from "react";
 import Link from "next/link";
 
@@ -126,17 +128,24 @@ export default function Bookshelf() {
 
 function Books() {
     return (
-        <>
-            {books.map((book) => (
-                <section key={Math.random()}>
-                    <h1>{book.title}<span style={{fontWeight: 200}}> - {book.author}</span></h1>
-                    <div className="medium-top-separator">
-                        <img className="hidden sm:block" src={book.img} style={{float: 'left', width: "200px", marginRight: '40px'}} alt="" />
-                        <p>{book.bio}</p>
-                    </div>
-                </section>
-            ))}
-        </>
+        <div className="bookshelf">
+            <section>
+                <p style={{marginTop: '50px', marginBottom: '50px'}}>
+                    The following are some books that I've read and really enjoyed. Maybe you can find something interesting here too!
+                </p>
+            </section>
+            <div className="books">
+                {books.map((book) => (
+                    <section key={Math.random()}>
+                        <h1>{book.title}<span style={{fontWeight: 200}}> - {book.author}</span></h1>
+                        <div className="medium-top-separator">
+                            <img className="hidden sm:block" src={book.img} style={{float: 'left', width: "200px", marginRight: '40px'}} alt="" />
+                            <p>{book.bio}</p>
+                        </div>
+                    </section>
+                ))}
+            </div>
+        </div>
     )
 }
 
