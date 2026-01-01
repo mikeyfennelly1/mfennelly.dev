@@ -22,7 +22,7 @@ const AboutMeSections: AboutMeSectionInterface[] = [
             <p className="medium-bottom-separator">
                 During 2020 when schools were closed in Ireland due to COVID (I was 15 years old), I began trying my hand at some new things.
                 One of those things was making small ecommerce websites on <Link href="http://www.shopify.com/" target="_blank">Shopify</Link>. I had big plans
-                of making lots of money and, like any 15 year old would, I thought it would be so easy 😀
+                of making lots of money and, of course, thought it was going to be so easy 😀
             </p>
             <p className="medium-bottom-separator">
                 My first website was a dropshipping website selling <strong>Dog Beds</strong>. From there I went on to selling <strong>Neck Massagers</strong>. Yes, funny 😀
