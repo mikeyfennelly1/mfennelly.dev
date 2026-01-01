@@ -11,6 +11,7 @@ const ProductMockups: SoftwareProjectInterface[] = [
         project: {
             projectName: "CharlemagneDB",
             projectBrief: <>CharlemagneDB is a <Link href="https://mikeyfennelly1.github.io/CharlamagneDB/" target="_blank" className="underline">website</Link> for a concept database platform that is AI oriented in its development process to automate many of the reduntant tasks in database configuration for applications.</>,
+            projectSourceCodeLink: "https://github.com/mikeyfennelly1/CharlamagneDB",
             technologies: ["React", "GSAP", "TailwindCSS", "Figma", "Adobe XD", "Docker", "Framer Motion", "Firebase"],
             startDate: "September 2023",
             endDate: "April 2024"
@@ -57,7 +58,7 @@ export default function Product() {
         <>
             <section>
                 <h1 className={"large-padding-gap-top"}>Product Mockups</h1>
-                <p className={"small-separator"}>My interest in technology is the birth-child of my interest in products that people love. Along the way I invested some time in the more customer facing elements of what creates a complete product. This is an important aspect of my attitude to tech, I thought it was worth sharing...</p>
+                <p className={"small-separator max-md:mb-[50px]"}>My interest in technology is the birth-child of my interest in products that people love. Along the way I invested some time in the more customer facing elements of what creates a complete product. This is an important aspect of my attitude to tech, I thought it was worth sharing...</p>
                 {ProductMockups.map((p) => (
                     <div key={Math.random()} className={"project-columns"}>
                         <Project
