@@ -1,0 +1,79 @@
+1:"$Sreact.fragment"
+2:I[8110,["874","static/chunks/874-c28bc0b464981966.js","74","static/chunks/74-66c07cbbf52c5549.js","177","static/chunks/app/layout-685a22c270818ac7.js"],"default"]
+3:I[7555,[],""]
+4:I[1295,[],""]
+5:I[6874,["874","static/chunks/874-c28bc0b464981966.js","831","static/chunks/app/blog/page-f7c4f85d96ea45d0.js"],""]
+7:I[9665,[],"OutletBoundary"]
+a:I[9665,[],"ViewportBoundary"]
+c:I[9665,[],"MetadataBoundary"]
+e:I[6614,[],""]
+:HL["/_next/static/media/028c0d39d2e8f589-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/5b01f339abf2f1a5.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/8e4d0f83dcb11cdd.css","style"]
+:HL["/_next/static/css/459cf66e253ff2b9.css","style"]
+:HL["/_next/static/css/c88e3d6e7d0028ec.css","style"]
+0:{"P":null,"b":"q0LYrAql6GEwoQYTM_wqa","p":"","c":["","blog","intro-to-container-internals-in-linux"],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","intro-to-container-internals-in-linux","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/8e4d0f83dcb11cdd.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/459cf66e253ff2b9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/c88e3d6e7d0028ec.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"__className_fb8f2c","children":["$","body",null,{"children":[["$","$L2",null,{"links":[{"text":"Home","href":"/"},{"text":"Product Mockups","href":"/product"},{"text":"Linux Kernel Projects","href":"/linux-kernel-projects"},{"text":"Other Software Projects","href":"/other-software-projects"},{"text":"Content Creation","href":"/content-creation"},{"text":"About Me","href":"/about-me"},{"text":"Bookshelf","href":"/bookshelf"}]}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"className":"large-separator medium-bottom-separator medium-padding-x","children":[["$","div",null,{"className":"footer-main","children":[["$","h1",null,{"children":"Let's Work Together"}],["$","h3",null,{"id":"email-address","className":"__className_f910ec","style":{"fontWeight":300},"children":"mikeyp.fennelly@gmail.com"}]]}],["$","span",null,{"className":"small-padding-bottom","children":[["$","$L5",null,{"href":"https://www.linkedin.com/in/mikeyfennelly/","target":"_blank","className":"link-text-separation","children":"LinkedIn"}],["$","$L5",null,{"href":"https://github.com/mikeyfennelly1","target":"_blank","className":"link-text-separation","children":"GitHub"}]]}],["$","div",null,{"className":"medium-separator light-border-top","children":["$","p",null,{"className":"small-separator","children":"An eefenn website."}]}]]}]]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","intro-to-container-internals-in-linux","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6","$undefined",null,["$","$L7",null,{"children":["$L8","$L9",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","QOURuTrLp3DfO7rdym6Yu",{"children":[["$","$La",null,{"children":"$Lb"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Lc",null,{"children":"$Ld"}]]}],false]],"m":"$undefined","G":["$e","$undefined"],"s":false,"S":true}
+f:T4bf,package main
+
+import (
+	"os"
+	"os/exec"
+	"syscall"
+)
+
+func main() {
+	args := os.Args
+	if len(args) < 2 {
+		println("Usage: ./program [create|chroot]")
+		return
+	}
+
+	switch args[1] {
+	case "create":
+		create()
+	case "chroot":
+		startContainer("~/rootfs")
+	default:
+		println("Unknown command:", args[1])
+	}
+}
+
+func create() {
+	println("Executing the create step")
+	commandToReinvokeThisProcess := exec.Command("/proc/self/exe", "chroot")
+	commandToReinvokeThisProcess.SysProcAttr = &syscall.SysProcAttr{
+		Cloneflags: syscall.CLONE_NEWUTS |
+			syscall.CLONE_NEWPID |
+			syscall.CLONE_NEWNS |
+			syscall.CLONE_NEWNET |
+			syscall.CLONE_NEWIPC,
+	}
+
+	commandToReinvokeThisProcess.Stdin = os.Stdin
+	commandToReinvokeThisProcess.Stdout = os.Stdout
+	commandToReinvokeThisProcess.Stderr = os.Stderr
+
+	commandToReinvokeThisProcess.Run()
+}
+
+func startContainer(rootDirName string) {
+	// copying bash into our pseudo-container
+	_ = os.Mkdir(rootDirName, 0755)
+
+	syscall.Chroot(rootDirName)
+	syscall.Chdir("/")
+	syscall.Sethostname([]byte("dummy-container"))
+
+	println("Now inside new root! Spawning bash...")
+
+	cmd := exec.Command("/bin/sh")
+	cmd.Stdin = os.Stdin
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+	cmd.Run()
+} 
+6:["$","article",null,{"className":"section-padding large-padding-y container mx-auto min-h-screen","children":["$","div",null,{"className":"max-w-4xl mx-auto bg-white p-8 md:p-16 shadow-sm","children":[["$","header",null,{"className":"mb-10 pb-10 border-b border-gray-200","children":[["$","h1",null,{"className":"text-4xl md:text-5xl mb-4 tracking-tight","children":"Intro to Container internals in Linux"}],["$","div",null,{"className":"text-gray-500 flex gap-2","children":[["$","span",null,{"children":"October 14, 2025"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"Mikey Fennelly"}]]}]]}],["$","div",null,{"className":"prose prose-lg max-w-none prose-headings:font-medium prose-h1:text-3xl prose-h2:text-2xl prose-a:text-blue-600 hover:prose-a:underline","children":[["$","p","p-0",{"children":"No matter what field of Software Engineering you work in, it's highly likely that you've heard of the buzz words \"Containers\" and \"Cloud Native\". I too had heard them a lot, so made it my mission to get down and dirty to understand the engineering behind these buzz words. In this article I am going to explore some of the topics that I picked up on my journey in learning about containers and cloud native. Hopefully, they can help some others demistify these buzz words too!"}],"\n",["$","p","p-1",{"children":"Grab your popcorn - and preferably some flavor of Linux too."}],"\n",["$","h2","h2-0",{"children":"\"Containers are lightweight virtual machines\"... or are they?"}],"\n",["$","p","p-2",{"children":"If you have explored this topic before, it is likely that you have encountered statements such as \"containers are lightweight virtual machines\". This isn't necessarily a bad mental model for containers, but it can be misleading. Containers are a form of virtualisation (specifically OS level virtualisation) and are a way to organise software components so that they can't see out of their little world. This mental model is a simple way of thinking about containers, but it isn't accurate. The most misleading suggestion of this statement is that containers are one single unit of something. Saying that a container is a lightweight VM is actually quite off the mark, because the truth is that a container doesn't have any weight (so it can't be considered \"lightweight\"), and a container isn't a virtual machine! So what is a container?"}],"\n",["$","p","p-3",{"children":"What we refer to as a container is actually a combination of different operating system features that come together to isolate a process running on an OS. That's a container is; an isolated process or a group of processes running on a host kernel. The exact implementation can vary from Linux, to Windows, to Solaris, to z/OS (and so on..), but the general concepts remain the same across the board."}],"\n",["$","h2","h2-1",{"children":"Dividing the container"}],"\n",["$","p","p-4",{"children":"As mentioned before, a container isn't one single indivisible and tangible unit. A container is rather a process or group of processes that is subject to a menu of different attributes at once. These attributes have a limiting effect on the process in the following ways:"}],"\n",["$","ol","ol-0",{"children":["\n",["$","li","li-0",{"children":"What the process/processes can see (parts of the filesystem, other processes)."}],"\n",["$","li","li-1",{"children":"The resources available to that process (the devices they can access, memory/CPU/network usage etc.)."}],"\n",["$","li","li-2",{"children":"What the process/processes can do (what syscalls they can make)."}],"\n",["$","li","li-3",{"children":"What the process/processes has the potential of doing in the future (what capabilities their child processes can inherit)."}],"\n"]}],"\n",["$","p","p-5",{"children":"Linux makes all of this possible through the following kernel features:"}],"\n",["$","ol","ol-1",{"children":["\n",["$","li","li-0",{"children":"Namespaces - of which there are 7. These can be thought of as categorized silos, which define information the kernel will give a process about the wider system."}],"\n",["$","li","li-1",{"children":"cgroups (control groups). These can be thought of as a whole cockpit of nobs and dials that can be used to granularly control the resources (of all kinds) that are available to processes in the cgroup."}],"\n",["$","li","li-2",{"children":"Security features - such as linux capabilities, seccomp filters & linux security modules like SELinux (a quite advanced module, with high detail - usually on RHEL & related distros) and AppArmor (simpler in comparison to RHEL, more common on Debian related distros)."}],"\n",["$","li","li-3",{"children":"chroot jails"}],"\n",["$","li","li-4",{"children":"Special filesystem types - the most common being (OverlayFS, AUFS and FUSE)."}],"\n"]}],"\n",["$","p","p-6",{"children":"These low level concepts underpin the large and complex world of cloud native tools, from Kubernetes to Docker and all of your favorite cloud services. They are continuations on these primitives."}],"\n",["$","h2","h2-2",{"children":"Creating a bite-size container - from scratch!"}],"\n",["$","p","p-7",{"children":"If you are running Linux (and have Golang installed), you can follow the Golang code below to create a dummy container using Linux namespaces and the chroot syscall."}],"\n",["$","pre","pre-0",{"children":["$","code","code-0",{"className":"language-go","children":"$f"}]}],"\n",["$","ol","ol-2",{"children":["\n",["$","li","li-0",{"children":[["$","strong","strong-0",{"children":"Download an Alpine filesystem:"}]," Before you try running the program however, you must download a filesystem (I recommend a light form of alpine linux) which you can use to be the filesystem of your dummy container. You can download your filesystem from the Alpine downloads page: https://alpinelinux.org/downloads/"]}],"\n",["$","li","li-1",{"children":[["$","strong","strong-0",{"children":"Untar the download:"}]," Move the contents (still in one containing directory named 'rootfs') to the ~ directory."]}],"\n",["$","li","li-2",{"children":[["$","strong","strong-0",{"children":"Traverse to the directory:"}]," Go to the directory where you put your Go code (in the main.go file)."]}],"\n",["$","li","li-3",{"children":[["$","strong","strong-0",{"children":"Start the mini container:"}]," You can start the mini container with the command:"]}],"\n"]}],"\n",["$","pre","pre-1",{"children":["$","code","code-0",{"className":"language-bash","children":"sudo go run main.go create\n"}]}],"\n",["$","h3","h3-0",{"children":"Here is what you did:"}],"\n",["$","ol","ol-3",{"children":["\n",["$","li","li-0",{"children":[["$","strong","strong-0",{"children":"Re-invoked the program:"}]," Created a new process by using the ",["$","code","code-0",{"children":"exec"}]," syscall on the current program's binary."]}],"\n",["$","li","li-1",{"children":[["$","strong","strong-0",{"children":"Applied Namespace flags:"}]," Implicitly (via the Go standard library) set the flags on that call to place the resulting process in new namespaces."]}],"\n",["$","li","li-2",{"children":[["$","strong","strong-0",{"children":"Triggered the Container start:"}]," Executed the syscall, reinvoking the command and directing control flow to the ",["$","code","code-0",{"children":"startContainer"}]," function."]}],"\n",["$","li","li-3",{"children":[["$","strong","strong-0",{"children":"Changed Root Directory:"}]," Executed the ",["$","code","code-0",{"children":"chroot"}]," syscall, changing the process's perception of the filesystem's root location."]}],"\n",["$","li","li-4",{"children":[["$","strong","strong-0",{"children":"Navigated to New Root:"}]," Moved into the new root directory."]}],"\n",["$","li","li-5",{"children":[["$","strong","strong-0",{"children":"Started a Shell:"}]," Executed a new shell within the container, spawning a new process that inherits namespaces from the parent process."]}],"\n"]}]]}]]}]}]
+b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+9:null
+d:[["$","title","0",{"children":"Mikey Fennelly | Trainee Software Engineer"}],["$","meta","1",{"name":"description","content":"I am currently studying Immersive Software Engineering [ISE] at the University of Limerick. I am a passionate technologist with a keen interest in Software Engineering, Artificial Intelligence and video creation and graphics."}],["$","link","2",{"rel":"icon","href":"/profile-photo.png"}]]
