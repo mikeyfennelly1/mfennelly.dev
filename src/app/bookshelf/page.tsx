@@ -131,7 +131,7 @@ function Books() {
                 <section key={Math.random()}>
                     <h1>{book.title}<span style={{fontWeight: 200}}> - {book.author}</span></h1>
                     <div className="medium-top-separator">
-                        <img src={book.img} style={{float: 'left', width: "200px", marginRight: '40px'}} alt="" />
+                        <img className="hidden sm:block" src={book.img} style={{float: 'left', width: "200px", marginRight: '40px'}} alt="" />
                         <p>{book.bio}</p>
                     </div>
                 </section>
