@@ -1,8 +1,10 @@
 import Project from "@/components/projects/project/Project";
+import {ReactNode} from "react";
+import Link from "next/link";
 
 interface AboutMeSectionInterface {
     title?: string;
-    content: string;
+    content: ReactNode;
 }
 
 interface AboutMeInterface {
@@ -16,13 +18,36 @@ const AboutMeSections: AboutMeSectionInterface[] = [
     },
     {
         title: "How I Got Into Software, Tech and Content Creation\n",
-        content: "During 2020 while schools were closed in Ireland, I began trying my hand at some new things. One of those things was making small ecommerce websites on Shopify. I began getting into ecommerce and all of the creative processes that are required to have a successful ecommerce brand. I needed to drive traffic to my website, and also needed my website to look as good as possible so that people would hopefully buy my product. I became frustrated however with the inflexible design capabilities of Shopify, so I began to look into how I could make my websites and advertising content better. I read books about copywriting for sales so that I could convert more customers from what they read on my website and Facebook Ads. I also began getting into how I could make the visuals of the brand better. This meant making a better website and better video advertisement content. This led me to the topics of web development, photorealistic 3d product rendering and video and photo editing.\n",
-    },
-    {
-        content: "Learning these skills was a demonstration of my focus on the development of a brand and a product's image.\n"
-    },
-    {
-        content: "In the summer of 2022 I began a YouTube channel called 'Sport Cartel', so that I could get more hands-on experience of content creation and building a brand. Making a YouTube channel was the perfect exercise in learning all of these skills, as it taught me not only the Adobe Suite, but through the invaluable mistakes I made has helped me learn a lot about converting viewer, viewer retention and what it takes to scale a brand on the front-end. My most valuable lesson from making this channel was the value of a team in taking on a big project.\n"
+        content: <>
+            <p className="medium-bottom-separator">
+                During 2020 when schools were closed in Ireland due to COVID (I was 15 years old), I began trying my hand at some new things.
+                One of those things was making small ecommerce websites on <Link href="http://www.shopify.com/" target="_blank">Shopify</Link>. I had big plans
+                of making lots of money and, like any 15 year old would, I thought it would be so easy 😀
+            </p>
+            <p className="medium-bottom-separator">
+                My first website was a dropshipping website selling <strong>Dog Beds</strong>. From there I went on to selling <strong>Neck Massagers</strong>. Yes, funny 😀
+            </p>
+            <p className="medium-bottom-separator">
+                To my amazement, sales were very slow. After thinking this was going to be easy, I quickly realised that there was a lot more to ecommerce
+                than just setting up a website and waiting for the money to roll in.
+            </p>
+            <p className="medium-bottom-separator">
+                From there I started to get more into the creative processes around ecommerce and what's involved in creating a successful ecommerce brand.
+                I realised that I needed to create a much nicer website but was becoming increasingly frustrated with the inflexibility of Shopify. This led me
+                to spend time learning web development frameworks like <Link href={"https://react.dev/"} target="_blank">React</Link>, as well as CI/CD processes using
+                &nbsp;<Link href="https://github.com/features/actions" target="_blank">GitHub Actions</Link>.
+            </p>
+            <p className="medium-bottom-separator">
+                While I was finding these technologies very very interesting (and fun), I also started to read books about copywriting for sales so that I could convert more customers
+                from what they read on my website and Facebook Ads. I also began getting into how I could make the visuals of the brand better.
+                This led me to wider topics around photorealistic product rendering via tools such as <Link href={"https://www.adobe.com/"} target="_blank">Adobe Creative Suite</Link>
+                &nbsp;and <Link href="https://www.blender.org/" target="_blank">Blender</Link>.
+            </p>
+            <p>
+                In the summer of 2022 I began a YouTube channel called "Sport Cartel". Making a YouTube channel was a great way to hone my story telling skills, as well another
+                avenue for me to exercise my creativity and technical skills using <Link href={"https://www.adobe.com/"} target="_blank">Adobe Creative Suite</Link> etc.
+            </p>
+        </>,
     }
 ]
 
@@ -30,10 +55,9 @@ export default function AboutMe() {
     return (
         <>
             <section>
-                <h1 className={"large-padding-gap-top"}>About Me</h1>
-                {AboutMeSections.map((s) => (
+                {AboutMeSections.map((s, index) => (
                     <AboutMeSection
-                        key={s.content}
+                        key={`c-${index}`}
                         title={s.title}
                         content={s.content}
                     ></AboutMeSection>
@@ -48,8 +72,8 @@ export default function AboutMe() {
 function AboutMeSection({title, content}: AboutMeSectionInterface) {
     return (
         <div className={"medium-separator"}>
-            <h3>{title}</h3>
-            <p>{content}</p>
+            <h2 className="medium-bottom-separator">{title}</h2>
+            <>{content}</>
         </div>
     )
 }
