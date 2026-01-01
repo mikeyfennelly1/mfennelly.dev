@@ -24,7 +24,7 @@ export default function ExperienceItem(
     return (
         <>
             <div className={"experience-item medium-separator"}>
-                <h3 className={"condense"}><span className={"bold accent1"}>{jobTitle}</span> - <Link href={companyLink} target={"_blank"} className={"font-light"}>{company}</Link></h3>
+                <h3 className={"condense"}><span className={"bold accent1"}>{jobTitle}</span> - <Link href={companyLink} target={"_blank"} className={"font-light underline"}>{company}</Link></h3>
                 <h4 className={"accent2"}>{startDate} - {endDate}</h4>
                 <p className={"small-separator"}>{description}</p>
                 {children}
