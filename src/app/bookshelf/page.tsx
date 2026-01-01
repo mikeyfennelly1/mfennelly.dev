@@ -34,6 +34,7 @@ const books: book[] = [
     {
         title: "Ogilvy On Advertising",
         author: "David Ogilvy",
+        img: "/bookshelf/Ogilvy_On_Advertising.jpg",
         bio: <>
             <p className="medium-bottom-separator">
                 During the COVID lockdowns I got heavily interested in ecommerce and advertising on the internet. In doing so I researched and consumed any information I could get my hands on that could ultimately make me more sales. This lead me to reading books about consumer psychology, marketing and copywriting. Ogilvy on advertising was one of my two favorites of the books that I read during this period.
@@ -49,6 +50,7 @@ const books: book[] = [
     {
         title: "The Power of Habit",
         author: "Charles Duhigg",
+        img: "/bookshelf/duhigg-Power-of-Habit.jpg",
         bio: <>
             <p className="medium-bottom-separator">
                 The Power of Habit is a book that delves into the importance of building habits, and the science of doing so. It provides a very interesting and actionable detail of how habits are built and maintained. Like any good book, after you read this you look at life with a bit of a different perspective. In this book the new perspective that I gained was the role that habits play in our life, and that to a certain extent we are our habits. This book gives you the information needed to redefine your own habits, and I guess in turn reinvent yourself - provided you employ the techniques and knowhow provided in the book.
@@ -61,6 +63,7 @@ const books: book[] = [
     {
         title: "Elon Musk",
         author: "Walter Isaacson",
+        img: "/bookshelf/Elon_Musk.jpg",
         bio: <>
             <p className="medium-bottom-separator">
                 Love him or hate him, Elon Musk is one of the most interesting people of our time. I read this book at the same time I was reading Steve Jobs biography, and saw a lot of similarities in both men. They are both highly successful but also very cruel people in their own way. To be honest I wasn't very interested in Musk's personal life or his opinions, and rather focused on his corporate life and how he operated on a professional level.
@@ -73,15 +76,23 @@ const books: book[] = [
     {
         title: "The Boron Letters",
         author: "Gary C. Halbert",
+        img: "/bookshelf/The_Boron_Letters.jpg",
         bio: <>
+            <p className="medium-bottom-separator">
+                This book is about a famous copywriter that somehow ended up in prison. He thought that the best thing he could do for his son was to pass down to him his knowledge of writing for advertisement.
+            </p>
+            <p className="medium-bottom-separator">
+                Through a series of letters (now known as The Boron Letters), he teaches his son how to write, and think like a marketing expert. It is specific, brief and actionable training for how to write brilliant copy.
+            </p>
             <p>
-                This book - if I remember correctly - is about a famous copywriter that somehow ended up in prison. He thought that the best thing he could do for his son was to pass down to him his knowledge of writing for advertisement. Through a series of letters (now known as The Boron Letters), he teaches his son how to write, and think like a marketing expert. It is specific, brief and actionable training for how to write brilliant copy. This is a very short book that I definitely recommend.
+                This is a very short book that I definitely recommend.
             </p>
         </>
     },
     {
         title: "Beyond Good and Evil",
         author: "Friedrich Nietzsche",
+        img: "/bookshelf/Beyond_Good_and_Evil.jpg",
         bio: <>
             <p className="medium-bottom-separator">
                 When I was 18 I started getting into philosophy, and more particularly reading about German philosophers such as Nietzsche, Hegel and Schopenhauer. While browsing on YouTube I would listen to lectures and videos about philosophy and enjoyed the depth of but also the courage of thought of these philosophers.
@@ -94,6 +105,7 @@ const books: book[] = [
     {
         title: "Thinking, Fast and Slow",
         author: "Daniel Kahneman",
+        img: "/bookshelf/Thinking_Fast_and_Slow.jpg",
         bio: <>
             <p>
                 This is another very cool and enjoyable book that is about thinking - but more importantly the downfalls of thinking, and trusting your thoughts, and how people often think with heuristics, and never second guess their sanity. This book will surprise you by showing you how pregnable your thinking really is.
