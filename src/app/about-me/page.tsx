@@ -14,7 +14,7 @@ interface AboutMeInterface {
 const AboutMeSections: AboutMeSectionInterface[] = [
     {
         title: "Who am I",
-        content: "I am a 21 year old from Ireland with many interests from sport to reading and technology.\n"
+        content: <p>I'm a 21 year old from Ireland. I have many interests, ranging from sport to reading and technology.</p>
     },
     {
         title: "How I Got Into Software, Tech and Content Creation\n",
