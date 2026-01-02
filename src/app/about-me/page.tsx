@@ -14,7 +14,7 @@ interface AboutMeInterface {
 const AboutMeSections: AboutMeSectionInterface[] = [
     {
         title: "Who am I",
-        content: <p>I'm a 21 year old from Ireland. I have many interests, ranging from sport to reading and technology.</p>
+        content: <p>I'm a 21 year old from Ireland. I have many interests, ranging from sport to <Link href="/bookshelf" className={"bold accent1 underline"}>reading</Link> and technology.</p>
     },
     {
         title: "How I Got Into Software, Tech and Content Creation\n",
@@ -38,7 +38,7 @@ const AboutMeSections: AboutMeSectionInterface[] = [
                 &nbsp;<Link href="https://github.com/features/actions" target="_blank" className={"bold accent1 underline"}>GitHub Actions</Link>.
             </p>
             <p className="medium-bottom-separator">
-                While I was finding these technologies very very interesting (and fun), I also started to read books about copywriting for sales so that I could convert more customers
+                While I was finding these technologies very very interesting (and fun), I also started to <Link href="/bookshelf" className={"bold accent1 underline"}>read books</Link> about copywriting for sales so that I could convert more customers
                 from what they read on my website and Facebook Ads. I also began getting into how I could make the visuals of the brand better.
                 This led me to wider topics around photorealistic product rendering via tools such as <Link href={"https://www.adobe.com/"} target="_blank" className={"bold accent1 underline"}>Adobe Creative Suite</Link>
                 &nbsp;and <Link href="https://www.blender.org/" target="_blank" className={"bold accent1 underline"}>Blender</Link>.
