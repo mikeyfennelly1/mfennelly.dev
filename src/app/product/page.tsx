@@ -10,7 +10,7 @@ const ProductMockups: SoftwareProjectInterface[] = [
     {
         project: {
             projectName: "CharlemagneDB",
-            projectBrief: <>CharlemagneDB is a <Link href="https://mikeyfennelly1.github.io/CharlamagneDB/" target="_blank" className="underline">website</Link> for a concept database platform that is AI oriented in its development process to automate many of the reduntant tasks in database configuration for applications.</>,
+            projectBrief: <>CharlemagneDB is a <Link href="https://mikeyfennelly1.github.io/CharlamagneDB/" target="_blank" className={"bold accent1 underline"}>website</Link> for a concept database platform that is AI oriented in its development process to automate many of the reduntant tasks in database configuration for applications.</>,
             projectSourceCodeLink: "https://github.com/mikeyfennelly1/CharlamagneDB",
             technologies: ["React", "GSAP", "TailwindCSS", "Figma", "Adobe XD", "Docker", "Framer Motion", "Firebase"],
             startDate: "September 2023",
@@ -25,7 +25,7 @@ const ProductMockups: SoftwareProjectInterface[] = [
     {
         project: {
             projectName: "points-lab",
-            projectBrief: <>A <Link href="https://mikeyfennelly1.github.io/points-lab/" target="_blank" className="underline">website</Link> for a concept SaaS product that helps Leaving Cert students study for their exams.</>,
+            projectBrief: <>A <Link href="https://mikeyfennelly1.github.io/points-lab/" target="_blank" className={"bold accent1 underline"}>website</Link> for a concept SaaS product that helps Leaving Cert students study for their exams.</>,
             projectSourceCodeLink: "https://github.com/mikeyfennelly1/points-lab",
             technologies: ["HTML5", "CSS", "Adobe Photoshop", "Adobe Illustrator"],
             startDate: "June 2023",

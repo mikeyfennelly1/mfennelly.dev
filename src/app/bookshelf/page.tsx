@@ -16,7 +16,7 @@ const books: book[] = [
         bio: <>
             <p className="medium-bottom-separator">
                 In January 2024 my uncle Frank Fennelly went to California for the 40th anniversary of the launch of the original Macintosh.
-                Why is that, you ask? Well because he was an engineer on the <Link href="https://images.squarespace-cdn.com/content/v1/5235d1aae4b03309a86567e6/1379288523494-OZCW5YMVZXPNC17O174X/macteam.jpg" target="_blank" className="underline">original Mac team from 1982 to 1984</Link> (light brown sweater, back right corner).
+                Why is that, you ask? Well because he was an engineer on the <Link href="https://images.squarespace-cdn.com/content/v1/5235d1aae4b03309a86567e6/1379288523494-OZCW5YMVZXPNC17O174X/macteam.jpg" target="_blank" className={"bold accent1 underline"}>original Mac team from 1982 to 1984</Link> (light brown sweater, back right corner).
             </p>
             <p className="medium-bottom-separator">
                 I had known this growing up, but his trip to Palo Alto in 2024 prompted me to read more into the history of Apple during his time there. It was very interesting to read this book and imagine the beginnings of modern consumer technology, but even more cool to hear stories from Uncle Frank that aren't written about in the book e.g.

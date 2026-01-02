@@ -14,6 +14,7 @@ export default function Footer() {
                 </div>
                 <span className={"small-padding-bottom"}>
                     <Link href="https://www.linkedin.com/in/mikeyfennelly/" target={"_blank"} className={"link-text-separation"}>LinkedIn</Link>
+                    &nbsp;
                     <Link href="https://github.com/mikeyfennelly1" target={"_blank"} className={"link-text-separation"}>GitHub</Link>
                 </span>
                 <div className={"medium-separator light-border-top"}>
