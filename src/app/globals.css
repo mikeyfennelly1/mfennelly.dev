@@ -130,8 +130,11 @@ body {
   overflow-x: hidden;
 }
 
-.underline {
+a {
   text-decoration: underline;
+}
+nav a {
+  text-decoration: none;
 }
 
 section > h1 {
