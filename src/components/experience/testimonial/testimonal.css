@@ -1,10 +1,41 @@
+.testimonial-container {
+    display: flex;
+}
+
 @media screen and (min-width: 800px) {
     .testimonial-container {
         padding: 0 100px;
     }
 }
 
+#border-element {
+    min-width: 4px;
+    min-height: 100%;
+}
+
+.animated-gradient {
+    background: linear-gradient(
+            to bottom,
+            #F2B79F 0%,
+            #d9a893 35%,
+            #8a8f93 70%,
+            #596475 100%
+    );
+    animation: gradientAnimation 2s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .testimonial-container p {
-    border-left: 4px solid #D2B48C;
     padding-left: 50px;
 }
