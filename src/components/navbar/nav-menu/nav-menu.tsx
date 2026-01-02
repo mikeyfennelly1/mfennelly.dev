@@ -103,21 +103,10 @@ export function NavigationMenuDemo() {
                         <Link href="/blog">Blog</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
-                <NavigationMenuItem className="hidden md:block">
-                    <NavigationMenuTrigger>Bookshelf</NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                        <ul className="grid w-[300px] gap-4 p-2">
-                            <ListItem href="/bookshelf#software" title="Software">
-                                Books that I have read that are related to software engineering.
-                            </ListItem>
-                            <ListItem href="/bookshelf#philosophy" title="Philosophy">
-                                Philosophical books that I have found interesting.
-                            </ListItem>
-                            <ListItem href="/bookshelf#others" title="Others">
-                                Miscellaneous interesting reads and resources.
-                            </ListItem>
-                        </ul>
-                    </NavigationMenuContent>
+                <NavigationMenuItem>
+                    <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                        <Link href="/bookshelf">Bookshelf</Link>
+                    </NavigationMenuLink>
                 </NavigationMenuItem>
             </NavigationMenuList>
         </NavigationMenu>
