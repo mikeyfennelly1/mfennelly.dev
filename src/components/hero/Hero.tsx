@@ -16,7 +16,7 @@ export default function Hero() {
             </div>
             <div>
                 <section className={"max-[850px]:!pt-0"}>
-                    <div className={"medium-separator text-xl"}>
+                    <div className={"medium-separator"}>
                         <p><Link href={"https://software-engineering.ie"} target={"_blank"} className={"bold accent1 underline"}>Immersive Software Engineering [ISE]</Link> student (2nd year) at the University of Limerick, Ireland.</p>
                         <br/>
                         <p>I'm a passionate technologist with a keen interest in Software Engineering, Artificial Intelligence and Graphical Content Creation.</p>
