@@ -107,6 +107,11 @@
     letter-spacing: -0.8rem;
     text-decoration: underline;
     text-decoration-color: #F2B79F;
+    padding-bottom: 50px;
+}
+
+#cta-cards-section {
+    padding-bottom: 30px;
 }
 
 @media screen and (max-width: 800px) {
@@ -119,5 +124,6 @@
         font-size: 5rem;
         line-height: 1.2;
         letter-spacing: -0.2rem;
+        padding-bottom: 10px;
     }
 }

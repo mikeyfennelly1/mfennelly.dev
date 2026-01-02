@@ -160,6 +160,10 @@ h2 {
   letter-spacing: -1.5px;
 }
 
+#experience {
+  padding-bottom: 50px;
+}
+
 .experience-item:first-of-type {
   padding-top: 0;
 }
