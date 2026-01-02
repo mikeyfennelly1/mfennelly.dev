@@ -7,16 +7,12 @@ import Link from "next/link";
 export default function Hero() {
     return (
         <>
-            <div id={"hero-image-container"} className={"max-[850px]:h-auto max-[850px]:z-10"}>
-                <img id={"hero-image"} className={"max-[850px]:hidden"} src={"/paul-henry--1.jpg"} alt={"Artwork of Connemara Landscape by Paul Henry."}/>
-                <div className={"absolute rounded-xs bg-white px-7 drop-shadow-2xl max-[850px]:static max-[850px]:bg-transparent max-[850px]:px-0 max-[850px]:drop-shadow-none max-[850px]:w-full max-[850px]:text-left max-[850px]:pl-[30px] max-[850px]:pr-[30px] max-[850px]:pt-[100px]"}>
-                    <h1 className={`${GeistSans.className} tracking-tighter max-[850px]:text-6xl max-[850px]:mb-0`}
-                        style={{fontSize: "5rem"}}>Mikey Fennelly</h1>
-                </div>
-            </div>
-            <div>
                 <section className={"max-[850px]:!pt-0"}>
-                    <div className={"medium-separator"}>
+                    <h1 className={`${GeistSans.className} tracking-tighter max-[850px]:text-6xl pt-10 pb-5 text-10xl max-[850px]:mb-0`}
+                        style={{fontSize: "10rem", lineHeight: "10rem", letterSpacing: "-0.8rem"}}>
+                        Mikey Fennelly
+                    </h1>
+                    <div className={"medium-separator text-xl"}>
                         <p><Link href={"https://software-engineering.ie"} target={"_blank"} className={"bold accent1 underline"}>Immersive Software Engineering [ISE]</Link> student (2nd year) at the University of Limerick, Ireland.</p>
                         <br/>
                         <p>I'm a passionate technologist with a keen interest in Software Engineering, Artificial Intelligence and Graphical Content Creation.</p>
@@ -33,7 +29,6 @@ export default function Hero() {
                         </div>
                     </section>
                 </section>
-            </div>
         </>
     )
 }
