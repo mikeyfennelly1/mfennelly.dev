@@ -29,7 +29,7 @@
     min-width: 100vw;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 850px) {
     .cta-cards-container {
         grid-template-columns: 1fr 1fr;
     }
@@ -46,14 +46,25 @@
 }
 
 .cta-card-container {
-    padding: 40px 60px;
+    padding: 60px 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
-    max-width: 650px;
+    width: 100%;
+    max-width: none;
     min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (min-width: 950px) {
+    .cta-card-container {
+        padding: clamp(30px, 4vw - 8px, 40px) clamp(20px, 16vw - 132px, 60px);
+        width: auto;
+        max-width: 650px;
+    }
 }
 
 .cta-card-container svg {
@@ -62,13 +73,16 @@
 }
 
 .cta-cards-container a {
-    max-width: 600px;
+    width: 100%;
+    max-width: none;
     text-decoration: none;
 }
 
-.cta-card-container {
-    margin-right: auto;
-    margin-left: auto;
+@media screen and (min-width: 950px) {
+    .cta-cards-container a {
+        width: auto;
+        max-width: 600px;
+    }
 }
 
 .cta-card-container h2 {
