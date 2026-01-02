@@ -101,9 +101,23 @@
     max-height: fit-content;
 }
 
+.mf-hero {
+    font-size: 10rem;
+    line-height: 10rem;
+    letter-spacing: -0.8rem;
+    text-decoration: underline;
+    text-decoration-color: #F2B79F;
+}
+
 @media screen and (max-width: 800px) {
     #cta-cards-section {
         padding-right: 5px;
         padding-left: 5px;
+    }
+
+    .mf-hero {
+        font-size: 5rem;
+        line-height: 1.2;
+        letter-spacing: -0.2rem;
     }
 }

@@ -8,8 +8,7 @@ export default function Hero() {
     return (
         <>
                 <section className={"max-[850px]:!pt-0"}>
-                    <h1 className={`${GeistSans.className} tracking-tighter max-[850px]:text-6xl pt-10 pb-5 text-10xl max-[850px]:mb-0`}
-                        style={{fontSize: "10rem", lineHeight: "10rem", letterSpacing: "-0.8rem", textDecoration: "underline", textDecorationColor: "#F2B79F"}}>
+                    <h1 className={`mf-hero ${GeistSans.className} tracking-tighter max-[850px]:text-6xl pt-10 pb-5 text-10xl max-[850px]:mb-0`}>
                         Mikey Fennelly
                     </h1>
                     <div className={"medium-separator text-xl"}>
