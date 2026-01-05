@@ -35,17 +35,14 @@ export interface ProjectInterface {
 export default function Project({projectName, projectBrief, projectSourceCodeLink, technologies, videoLink, startDate, endDate}: ProjectInterface) {
     return (
         <>
-            <div className={"medium-separator"}>
-                    <h3 className={`condense ${GeistMono.className}`}>{projectName}</h3>
+            <div>
+                <h3 className={`condense ${GeistMono.className}`}>{projectName}</h3>
                 {(startDate && endDate)?
                     <h4>{startDate} - {endDate}</h4>
                 :
                     <></>
                 }
                 <p>{projectBrief}</p>
-
-                <div className="small-separator">
-                </div>
             </div>
         </>
     )

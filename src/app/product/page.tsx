@@ -48,32 +48,34 @@ export default function Product() {
         <>
             <section>
                 <h1 className={"large-padding-gap-top"}>Product Mockups</h1>
-                <p className={"small-separator max-md:mb-[50px]"}>
+                <p className={"small-separator max-md:mb-[50px] medium-bottom-separator"}>
                     My interest in technology <Link href="/about-me" target="_blank" className={"bold accent1 underline"}>started with my interest in building products that people love</Link>.
                     Along the way I invested some time in the more customer facing elements of what creates a great product.
                     This is an important aspect of my attitude to tech, so I think it's worth sharing some of the project mockups I built as a way to help myself learn some of the
                     technologies in question.
                 </p>
-                {ProductMockups.map((p, index) => (
-                    <div key={Math.random()} className={"project-columns"}>
-                        <Project
-                            startDate={p.project.startDate}
-                            endDate={p.project.endDate}
-                            key={Math.random()}
-                            projectName={p.project.projectName}
-                            projectBrief={p.project.projectBrief}
-                            projectSourceCodeLink={p.project.projectSourceCodeLink}
-                        />
-                        <ProductScreenshot key={`project-screenshot-${index}`} {...p.project} />
-                        <GithubRepo
-                            technologies={p.project.technologies}
-                            key={Math.random()}
-                            repoName={p.repo.repoName}
-                            description={""}
-                            repoURL={p.repo.repoURL}>
-                        </GithubRepo>
-                    </div>
-                ))}
+                <div>
+                    {ProductMockups.map((p, index) => (
+                        <div key={Math.random()} className={"project-columns medium-bottom-separator"}>
+                            <Project
+                                startDate={p.project.startDate}
+                                endDate={p.project.endDate}
+                                key={Math.random()}
+                                projectName={p.project.projectName}
+                                projectBrief={p.project.projectBrief}
+                                projectSourceCodeLink={p.project.projectSourceCodeLink}
+                            />
+                            <ProductScreenshot key={`project-screenshot-${index}`} {...p.project} />
+                            <GithubRepo
+                                technologies={p.project.technologies}
+                                key={Math.random()}
+                                repoName={p.repo.repoName}
+                                description={""}
+                                repoURL={p.repo.repoURL}>
+                            </GithubRepo>
+                        </div>
+                    ))}
+                </div>
 
             </section>
 
@@ -83,7 +85,7 @@ export default function Product() {
 
 function ProductScreenshot(project: ProjectInterface) {
     return (
-        <div style={{marginTop: "60px"}}>
+        <div>
             <Link href={`${project.websiteLink}`} target={"_blank"}>
                 <img src={project.screenshotLink} alt={""}/>
             </Link>
