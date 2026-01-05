@@ -58,7 +58,12 @@ export default function Product() {
         <>
             <section>
                 <h1 className={"large-padding-gap-top"}>Product Mockups</h1>
-                <p className={"small-separator max-md:mb-[50px]"}>My interest in technology is the birth-child of my interest in products that people love. Along the way I invested some time in the more customer facing elements of what creates a complete product. This is an important aspect of my attitude to tech, I thought it was worth sharing...</p>
+                <p className={"small-separator max-md:mb-[50px]"}>
+                    My interest in technology <Link href="/about-me" target="_blank" className={"bold accent1 underline"}>started with my interest in building products that people love</Link>.
+                    Along the way I invested some time in the more customer facing elements of what creates a great product.
+                    This is an important aspect of my attitude to tech, so I think it's worth sharing some of the project mockups I built as a way to help myself learn some of the
+                    technologies in question.
+                </p>
                 {ProductMockups.map((p) => (
                     <div key={Math.random()} className={"project-columns"}>
                         <Project
