@@ -56,7 +56,7 @@ export default function Product() {
                 </p>
                 <div>
                     {ProductMockups.map((p, index) => (
-                        <div key={Math.random()} className={"project-columns medium-bottom-separator"}>
+                        <div key={Math.random()} className={"product-columns project-columns medium-bottom-separator"}>
                             <Project
                                 startDate={p.project.startDate}
                                 endDate={p.project.endDate}
