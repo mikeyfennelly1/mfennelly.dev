@@ -202,12 +202,14 @@ section > p {
   gap: 50px;
 }
 
-.product-columns.project-columns {
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
 .project-columns > * {
   max-width: 100%;
+}
+
+@media screen and (min-width: 1201px) {
+  .product-columns.project-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 1200px) {
