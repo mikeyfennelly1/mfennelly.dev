@@ -37,20 +37,6 @@ const ProductMockups: SoftwareProjectInterface[] = [
             repoURL: "https://github.com/mikeyfennelly1/points-lab",
         }
     },
-    {
-        project: {
-            projectName: "eefenn.com",
-            projectBrief: <>The website for eefenn.com. The source code for this website is closed, so unfortunately it can't be linked here. It is a static website, created with NEXT.js with TypeScript, and served from AWS S3 & AWS CloudFront.</>,
-            technologies: ["NEXT.js", "CSS", "TypeScript", "AWS", "Figma"],
-            startDate: "April 2025",
-            endDate: "April 2025"
-        },
-        repo: {
-            repoName: "eefenn.com",
-            description: "Website for eefenn.com. Created with NEXT/TypeScript\n",
-            repoURL: "/"
-        }
-    },
 ]
 
 export default function Product() {
