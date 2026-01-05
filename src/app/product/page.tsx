@@ -12,6 +12,8 @@ const ProductMockups: SoftwareProjectInterface[] = [
             projectName: "CharlemagneDB",
             projectBrief: <>CharlemagneDB is a <Link href="https://mikeyfennelly1.github.io/CharlamagneDB/" target="_blank" className={"bold accent1 underline"}>website</Link> for a concept database platform that is AI oriented in its development process to automate many of the reduntant tasks in database configuration for applications.</>,
             projectSourceCodeLink: "https://github.com/mikeyfennelly1/CharlamagneDB",
+            screenshotLink: "/product_mockups/CharlemagneDB.png",
+            websiteLink: "https://mikeyfennelly1.github.io/CharlamagneDB/",
             technologies: ["React", "GSAP", "TailwindCSS", "Figma", "Adobe XD", "Docker", "Framer Motion", "Firebase"],
             startDate: "September 2023",
             endDate: "April 2024"
@@ -27,6 +29,8 @@ const ProductMockups: SoftwareProjectInterface[] = [
             projectName: "points-lab",
             projectBrief: <>A <Link href="https://mikeyfennelly1.github.io/points-lab/" target="_blank" className={"bold accent1 underline"}>website</Link> for a concept SaaS product that helps Leaving Cert students study for their exams.</>,
             projectSourceCodeLink: "https://github.com/mikeyfennelly1/points-lab",
+            screenshotLink: "/product_mockups/PointsLab.png",
+            websiteLink: "https://mikeyfennelly1.github.io/points-lab/",
             technologies: ["HTML5", "CSS", "Adobe Photoshop", "Adobe Illustrator"],
             startDate: "June 2023",
             endDate: "November 2023"
@@ -50,7 +54,7 @@ export default function Product() {
                     This is an important aspect of my attitude to tech, so I think it's worth sharing some of the project mockups I built as a way to help myself learn some of the
                     technologies in question.
                 </p>
-                {ProductMockups.map((p) => (
+                {ProductMockups.map((p, index) => (
                     <div key={Math.random()} className={"project-columns"}>
                         <Project
                             startDate={p.project.startDate}
@@ -60,6 +64,7 @@ export default function Product() {
                             projectBrief={p.project.projectBrief}
                             projectSourceCodeLink={p.project.projectSourceCodeLink}
                         />
+                        <ProductScreenshot key={`project-screenshot-${index}`} {...p.project} />
                         <GithubRepo
                             technologies={p.project.technologies}
                             key={Math.random()}
@@ -73,5 +78,15 @@ export default function Product() {
             </section>
 
         </>
+    )
+}
+
+function ProductScreenshot(project: ProjectInterface) {
+    return (
+        <div style={{marginTop: "60px"}}>
+            <Link href={`${project.websiteLink}`} target={"_blank"}>
+                <img src={project.screenshotLink} alt={""}/>
+            </Link>
+        </div>
     )
 }

@@ -19,6 +19,8 @@ export interface ProjectInterface {
     projectSourceCodeLink?: string;
 
     videoLink?: string;
+    screenshotLink?: string;
+    websiteLink?: string;
 }
 
 /**
