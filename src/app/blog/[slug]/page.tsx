@@ -13,7 +13,7 @@ export default async function BlogPost(props: { params: Promise<{ slug: string }
     const post = getPostBySlug(params.slug);
 
     return (
-        <article className="section-padding large-padding-y container mx-auto min-h-screen">
+        <article className="section-padding mt-15 large-padding-y container mx-auto min-h-screen">
             <div className="max-w-4xl mx-auto bg-white p-8 md:p-16 shadow-sm">
                 <header className="mb-10 pb-10 border-b border-gray-200">
                     <h1 className="text-4xl md:text-5xl mb-4 tracking-tight">{post.title}</h1>
