@@ -37,10 +37,7 @@
 }
 
 .cta-card-top-row {
-    min-height: 50px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 30px;
     margin-bottom: 20px;
 }
@@ -54,7 +51,6 @@
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     margin-right: auto;
     margin-left: auto;
 }
@@ -91,6 +87,7 @@
 }
 
 .cta-card-brief {
+    font-weight: 300;
     margin-bottom: auto;
 }
 .cta-card-container p {
@@ -98,6 +95,7 @@
 }
 
 .cta-card-arrow-link-container {
+    margin-top: auto;
     max-height: fit-content;
 }
 
