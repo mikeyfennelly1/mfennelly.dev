@@ -323,12 +323,12 @@ body > section {
 }
 
 @media screen and (min-width: 1200px) {
-  .midland-steel-projects {
+  .midland-steel-projects, .manna-projects {
     padding: 50px 100px;
   }
 }
 
-.midland-steel-projects {
+.midland-steel-projects, .manna-projects {
   display: grid;
 }
 
@@ -341,7 +341,7 @@ h4 {
 }
 
 .midland-steel-projects > * {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   display: inline;
 }
 
