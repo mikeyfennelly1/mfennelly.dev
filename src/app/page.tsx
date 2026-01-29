@@ -10,7 +10,7 @@ export default function Home() {
                 <Experience
                     experienceItems={[
                         {
-                            jobTitle: "Founder and Software Developer",
+                            jobTitle: "Founder and Engineer",
                             company: "eefenn",
                             startDate: "September 2024",
                             endDate: "Present",
