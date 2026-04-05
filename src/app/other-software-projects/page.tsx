@@ -15,6 +15,20 @@ interface OtherSoftwareProjectsInterface {
 const OtherSoftwareProjects: SoftwareProjectInterface[] = [
     {
         project: {
+            projectName: "mrisv",
+            projectBrief: "A RISC-V CPU implementation using an FPGA programmed in Verilog. This project is currently in the early stages, but I am learning a lot about CPU architectures and digital electronics.",
+            technologies: ["Verilog", "FPGA"],
+            startDate: "April 2026",
+            endDate: "-"
+        },
+        repo: {
+            repoName: "mriscv",
+            description: "A Verilog description for a RISC-V CPU on a XLINX FPGA.",
+            repoURL: "https://github.com/mikeyfennelly1/mriscv"
+        }
+    },
+    {
+        project: {
             projectName: "cotc",
             projectBrief: "An asynchronous distributed system for a project in college. This uses NATS/Jetstream to create a durable producer/consumer architecture for time series data. Users can interface with the GUI or CLI to create producer groups, view stream hierarchies and query data.",
             technologies: ["NATS", "Ansible", "Helm","Kubernetes","Go"],
