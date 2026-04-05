@@ -15,6 +15,20 @@ interface OtherSoftwareProjectsInterface {
 const OtherSoftwareProjects: SoftwareProjectInterface[] = [
     {
         project: {
+            projectName: "cotc",
+            projectBrief: "An asynchronous distributed system for a project in college. This uses NATS/Jetstream to create a durable producer/consumer architecture for time series data. Users can interface with the GUI or CLI to create producer groups, view stream hierarchies and query data.",
+            technologies: ["NATS", "Ansible", "Helm","Kubernetes","Go"],
+            startDate: "February 2026",
+            endDate: "March 2026"
+        },
+        repo: {
+            repoName: "cotc",
+            description: "Distributed asynchronous time-series data ingestion pipeline.",
+            repoURL: "https://github.com/mikeyfennelly1/cotc"
+        }
+    },
+    {
+        project: {
             projectName: "eefenn-cli",
             projectBrief: "A command-line tool for managing scripts and automation workflows on Ubuntu. I created this tool because it was something that I wanted for some repetitive tasks that were cropping up with eefenn (hence why it is creatively named eefenn-cli). This command-line tool is essentially a command-line manager for local automation tasks. It provides a simple interface to create, manage, and run scripts.",
             technologies: ["Linux", "Automation", "Go"],
