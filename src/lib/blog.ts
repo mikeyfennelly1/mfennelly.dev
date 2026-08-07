@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-const postsDirectory = path.join(process.cwd(), 'src/content/blog');
+const postsDirectory = path.join(process.cwd(), 'content/blog');
 
 export type Post = {
     slug: string;
@@ -13,16 +13,16 @@ export type Post = {
     content: string;
 };
 
-export function getPostSlugs() {
+export function getPostSlugs(): string[] {
     if (!fs.existsSync(postsDirectory)) {
         return [];
     }
-    return fs.readdirSync(postsDirectory);
+    return fs.readdirSync(postsDirectory).filter((file) => file.endsWith('.mdx'));
 }
 
 export function getPostBySlug(slug: string): Post {
-    const realSlug = slug.replace(/\.md$/, '');
-    const fullPath = path.join(postsDirectory, `${realSlug}.md`);
+    const realSlug = slug.replace(/\.mdx$/, '');
+    const fullPath = path.join(postsDirectory, `${realSlug}.mdx`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const { data, content } = matter(fileContents);
 

@@ -1,22 +1,22 @@
-import { getPostBySlug, getAllPosts } from '@/lib/blog';
+import {getPostBySlug, getAllPosts, Post} from '@/lib/blog';
 import ReactMarkdown from 'react-markdown';
 
 export async function generateStaticParams() {
-    const posts = getAllPosts();
-    return posts.map((post) => ({
+    const posts: Post[] = getAllPosts();
+    return posts.map((post: Post): {slug: string} => ({
         slug: post.slug,
     }));
 }
 
 export default async function BlogPost(props: { params: Promise<{ slug: string }> }) {
-    const params = await props.params;
-    const post = getPostBySlug(params.slug);
+    const params: {slug: string} = await props.params;
+    const post: Post = getPostBySlug(params.slug);
 
     return (
         <article className="container mx-auto mt-15 min-h-screen px-6 pt-[45px] min-[800px]:px-12">
             <div className="max-w-4xl mx-auto bg-white p-8 md:p-16 shadow-sm">
                 <header className="mb-10 pb-10 border-b border-gray-200">
-                    <h1 className="text-4xl md:text-5xl mb-4 tracking-tight">{post.title}</h1>
+                    <h1 className="text-4xl md:text-5xl mb-4">{post.title}</h1>
                     <div className="text-gray-500 flex gap-2">
                         <span>{post.date}</span>
                         <span>•</span>

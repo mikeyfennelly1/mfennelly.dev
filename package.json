@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "export": "next export",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:debug": "vitest --inspect-brk run"
   },
   "dependencies": {
     "@next/font": "^14.2.15",
@@ -21,6 +24,7 @@
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.487.0",
     "next": "15.2.4",
+    "next-mdx-remote": "^6.0.0",
     "react": "^19.0.0",
     "react-chartjs-2": "^5.3.0",
     "react-dom": "^19.0.0",
@@ -37,6 +41,7 @@
     "eslint": "9.39.2",
     "eslint-config-next": "16.1.1",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^4.1.10"
   }
 }
