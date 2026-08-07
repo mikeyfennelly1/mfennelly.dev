@@ -77,9 +77,6 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-
-  --separator-factor: 15px;
-  --font-playfair: 'Playfair Display', serif;
 }
 
 .dark {
@@ -116,251 +113,38 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+/* Element defaults. Everything else is expressed as utility classes in the JSX. */
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
   p {
-    font-size: 1.3rem;
+    @apply text-[1.3rem];
   }
-}
-
-body {
-  min-width: 100vw;
-  overflow-x: hidden;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-section > h1 {
-  font-size: 3rem;
-  font-weight: 500;
-  letter-spacing: -3px;
-}
-
-@media screen and (max-width: 800px) {
-  h1 {
-    line-height: 1; /* Adjusts the space between lines */
-    margin-bottom: 40px;
+  h2 {
+    @apply text-[2.5rem] font-medium tracking-[-2px];
   }
-}
-
-h2 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  letter-spacing: -2px;
-}
-
-.condense {
-  letter-spacing: -1.5px;
-}
-
-#experience {
-  padding-bottom: 50px;
-}
-
-.experience-item:first-of-type {
-  padding-top: 0;
-}
-
-h3 {
-  font-size: 2rem;
-  font-weight: 500;
-  letter-spacing: -2px;
-}
-
-.invert-colors {
-  background-color: #222222;
-  color: #ffffff;
-}
-
-.accent2 {
-  color: #dcdcdc;
-}
-
-section > p {
-  font-weight: 300;
-}
-
-@media screen and (min-width: 800px) {
-  .section-padding {
-    padding-right: 5rem;
-    padding-left: 5rem;
-    padding-top: 5rem;
+  h3 {
+    @apply text-4xl font-medium tracking-[-2px];
   }
-}
-
-.project-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 50px;
-}
-
-.project-columns > * {
-  max-width: 100%;
-}
-
-@media screen and (min-width: 1201px) {
-  .product-columns.project-columns {
-    grid-template-columns: 1fr 1fr 1fr;
+  h4 {
+    @apply text-[#3f4696];
   }
-}
-
-@media screen and (max-width: 1200px) {
-  .project-columns {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 100%;
-    align-items: center;
-    gap: 50px;
+  section {
+    @apply px-6 pt-16;
   }
-}
-
-@media screen and (max-width: 799px) {
-  .large-separator {
-    margin-top: 50px !important;
+  section > * {
+    @apply mx-auto max-w-[1500px] px-[5px];
   }
-}
-@media screen and (max-width: 799px) {
-
-}
-
-section {
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  padding-top: 4rem;
-}
-
-.small-separator {
-  margin-top: 10px;
-}
-
-.medium-separator {
-  padding-bottom: calc(var(--separator-factor));
-  padding-top: calc(var(--separator-factor));
-}
-
-.large-separator {
-  margin-top: calc(var(--separator-factor) * 4);
-}
-
-.medium-top-separator {
-  margin-top: calc(var(--separator-factor) * 2);
-}
-
-.medium-bottom-separator {
-  margin-bottom: calc(var(--separator-factor) * 2);
-}
-
-.large-bottom-separator {
-  margin-bottom: calc(var(--separator-factor) * 2);
-}
-
-.large-padding-gap-top {
-  padding-top: calc(var(--separator-factor) * 3);
-}
-
-.large-padding-y {
-  padding-top: calc(var(--separator-factor) * 3);
-}
-
-.medium-padding-x {
-  padding-right: 50px;
-  padding-left: 50px;
-}
-
-.bold {
-  font-weight: 500;
-}
-
-
-
-section > * {
-  max-width: 1500px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 5px;
-  padding-left: 5px;
-}
-
-@media screen and (min-width: 800px) {
-  .container {
-    padding-left: 3rem;
-    padding-right: 3rem;
+  section > h1 {
+    @apply text-5xl font-medium tracking-[-3px];
   }
-}
-
-body > section {
-  margin-top: 30px;
-  padding-bottom: 30px;
-}
-
-.layout-space-between {
-  display: flex;
-  justify-content: space-between;
-}
-
-.layout-space-between > * {
-  display: inline;
-}
-
-.light-border-top {
-  border-top: 1px solid #929292;
-}
-
-.small-padding-top {
-  padding-top: 50px;
-}
-
-.small-padding-bottom {
-  padding-top: 50px;
-}
-
-@media screen and (min-width: 1200px) {
-  .midland-steel-projects, .manna-projects {
-    padding: 50px 100px;
+  section > p {
+    @apply font-light;
   }
-}
-
-.midland-steel-projects, .manna-projects {
-  display: grid;
-}
-
-:root {
-  --accent-purple: #3f4696;
-}
-
-h4 {
-  color: var(--accent-purple);
-}
-
-.midland-steel-projects > * {
-  margin-bottom: 0px;
-  display: inline;
-}
-
-.project-circle-container {
-  display: inline;
-  margin-right: 30px;
-  margin-top: 5px;
-  max-width: fit-content;
-}
-
-.project-brief-container {
-  display: inline;
-  max-width: fit-content;
-}
-
-.midland-steel-project-outer-container {
-  display: flex;
-}
-
-.midland-steel-project-circle {
-  margin: 10px 0;
+  @media screen and (max-width: 800px) {
+    h1 {
+      @apply mb-10 leading-none;
+    }
+  }
 }

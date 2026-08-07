@@ -14,15 +14,15 @@ const books: book[] = [
         author: "Walter Isaacson",
         img: "/bookshelf/Steve_Jobs.jpg",
         bio: <>
-            <p className="medium-bottom-separator">
+            <p className="mb-[30px]">
                 In January 2024 my uncle Frank Fennelly went to California for the 40th anniversary of the launch of the original Macintosh.
-                Why is that, you ask? Well because he was an engineer on the <Link href="https://images.squarespace-cdn.com/content/v1/5235d1aae4b03309a86567e6/1379288523494-OZCW5YMVZXPNC17O174X/macteam.jpg" target="_blank" className={"bold accent1 underline"}>original Mac team from 1982 to 1984</Link> (light brown sweater, back right corner).
+                Why is that, you ask? Well because he was an engineer on the <Link href="https://images.squarespace-cdn.com/content/v1/5235d1aae4b03309a86567e6/1379288523494-OZCW5YMVZXPNC17O174X/macteam.jpg" target="_blank" className={"font-medium underline"}>original Mac team from 1982 to 1984</Link> (light brown sweater, back right corner).
             </p>
-            <p className="medium-bottom-separator">
+            <p className="mb-[30px]">
                 I had known this growing up, but his trip to Palo Alto in 2024 prompted me to read more into the history of Apple during his time there. It was very interesting to read this book and imagine the beginnings of modern consumer technology, but even more cool to hear stories from Uncle Frank that aren't written about in the book e.g.
                 the fun stories where uncle Frank's boss had him working secretly in multiple offices so as to hide some covert work from the legendary Steve Jobs.
             </p>
-            <p className="medium-bottom-separator">
+            <p className="mb-[30px]">
                 My Uncle Paul Fennelly also worked as an engineer at Apple during this time. He worked on the Apple Lisa team. He too had fun stories of working at Apple during Silicon Valley's heyday,
                 many of which also involved dealings with Steve Jobs and others (Jef Raskin, Andy Hertzfeld, Chris Espinosa etc).
             </p>
@@ -36,10 +36,10 @@ const books: book[] = [
         author: "David Ogilvy",
         img: "/bookshelf/Ogilvy_On_Advertising.jpg",
         bio: <>
-            <p className="medium-bottom-separator">
+            <p className="mb-[30px]">
                 During the COVID lockdowns I got heavily interested in ecommerce and advertising on the internet. In doing so I researched and consumed any information I could get my hands on that could ultimately make me more sales. This lead me to reading books about consumer psychology, marketing and copywriting. Ogilvy on advertising was one of my two favorites of the books that I read during this period.
             </p>
-            <p className="medium-bottom-separator">
+            <p className="mb-[30px]">
                 In this book David Ogilvy - known as 'The Father of Advertising' - speaks about all things advertising in the twentieth century. Mostly he speaks about advertising in newspapers during the 1950s and 1960s, but information is the information in this book is both timeless and priceless. He details methods of gaining and maintaining a potential customers interest in an advertisement and the common pitfalls of inexperience in marketing. Ogilvy is thoroughly practical and dismisses the common thought process of supposed 'good advertising' and committed his philosophy to what measurably worked.
             </p>
             <p>
@@ -52,7 +52,7 @@ const books: book[] = [
         author: "Charles Duhigg",
         img: "/bookshelf/duhigg-Power-of-Habit.jpg",
         bio: <>
-            <p className="medium-bottom-separator">
+            <p className="mb-[30px]">
                 The Power of Habit is a book that delves into the importance of building habits, and the science of doing so. It provides a very interesting and actionable detail of how habits are built and maintained. Like any good book, after you read this you look at life with a bit of a different perspective. In this book the new perspective that I gained was the role that habits play in our life, and that to a certain extent we are our habits. This book gives you the information needed to redefine your own habits, and I guess in turn reinvent yourself - provided you employ the techniques and knowhow provided in the book.
             </p>
             <p>
@@ -65,7 +65,7 @@ const books: book[] = [
         author: "Walter Isaacson",
         img: "/bookshelf/Elon_Musk.jpg",
         bio: <>
-            <p className="medium-bottom-separator">
+            <p className="mb-[30px]">
                 Love him or hate him, Elon Musk is one of the most interesting people of our time. I read this book at the same time I was reading Steve Jobs biography, and saw a lot of similarities in both men. They are both highly successful but also very cruel people in their own way. To be honest I wasn't very interested in Musk's personal life or his opinions, and rather focused on his corporate life and how he operated on a professional level.
             </p>
             <p>
@@ -78,10 +78,10 @@ const books: book[] = [
         author: "Gary C. Halbert",
         img: "/bookshelf/The_Boron_Letters.jpg",
         bio: <>
-            <p className="medium-bottom-separator">
+            <p className="mb-[30px]">
                 This book is about a famous copywriter that somehow ended up in prison. He thought that the best thing he could do for his son was to pass down to him his knowledge of writing for advertisement.
             </p>
-            <p className="medium-bottom-separator">
+            <p className="mb-[30px]">
                 Through a series of letters (now known as The Boron Letters), he teaches his son how to write, and think like a marketing expert. It is specific, brief and actionable training for how to write brilliant copy.
             </p>
             <p>
@@ -94,7 +94,7 @@ const books: book[] = [
         author: "Friedrich Nietzsche",
         img: "/bookshelf/Beyond_Good_and_Evil.jpg",
         bio: <>
-            <p className="medium-bottom-separator">
+            <p className="mb-[30px]">
                 When I was 18 I started getting into philosophy, and more particularly reading about German philosophers such as Nietzsche, Hegel and Schopenhauer. While browsing on YouTube I would listen to lectures and videos about philosophy and enjoyed the depth of but also the courage of thought of these philosophers.
             </p>
             <p>
@@ -130,7 +130,7 @@ function Books() {
             {books.map((book) => (
                 <section key={Math.random()}>
                     <h1>{book.title}<span style={{fontWeight: 200}}> - {book.author}</span></h1>
-                    <div className="medium-top-separator">
+                    <div className="mt-[30px]">
                         <img className="hidden sm:block" src={book.img} style={{float: 'left', width: "200px", marginRight: '40px'}} alt="" />
                         <p>{book.bio}</p>
                     </div>

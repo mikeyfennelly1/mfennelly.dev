@@ -10,7 +10,7 @@ const ProductMockups: SoftwareProjectInterface[] = [
     {
         project: {
             projectName: "CharlemagneDB",
-            projectBrief: <>CharlemagneDB is a <Link href="https://mikeyfennelly1.github.io/CharlamagneDB/" target="_blank" className={"bold accent1 underline"}>website</Link> for a concept database platform that is AI oriented in its development process to automate many of the reduntant tasks in database configuration for applications.</>,
+            projectBrief: <>CharlemagneDB is a <Link href="https://mikeyfennelly1.github.io/CharlamagneDB/" target="_blank" className={"font-medium underline"}>website</Link> for a concept database platform that is AI oriented in its development process to automate many of the reduntant tasks in database configuration for applications.</>,
             projectSourceCodeLink: "https://github.com/mikeyfennelly1/CharlamagneDB",
             screenshotLink: "/product_mockups/CharlemagneDB.png",
             websiteLink: "https://mikeyfennelly1.github.io/CharlamagneDB/",
@@ -27,7 +27,7 @@ const ProductMockups: SoftwareProjectInterface[] = [
     {
         project: {
             projectName: "points-lab",
-            projectBrief: <>A <Link href="https://mikeyfennelly1.github.io/points-lab/" target="_blank" className={"bold accent1 underline"}>website</Link> for a concept SaaS product that helps Leaving Cert students study for their exams.</>,
+            projectBrief: <>A <Link href="https://mikeyfennelly1.github.io/points-lab/" target="_blank" className={"font-medium underline"}>website</Link> for a concept SaaS product that helps Leaving Cert students study for their exams.</>,
             projectSourceCodeLink: "https://github.com/mikeyfennelly1/points-lab",
             screenshotLink: "/product_mockups/PointsLab.png",
             websiteLink: "https://mikeyfennelly1.github.io/points-lab/",
@@ -47,16 +47,16 @@ export default function Product() {
     return (
         <>
             <section>
-                <h1 className={"large-padding-gap-top"}>Product Mockups</h1>
-                <p className={"small-separator max-md:mb-[50px] medium-bottom-separator"}>
-                    My interest in technology <Link href="/about-me" target="_blank" className={"bold accent1 underline"}>started with my interest in building products that people love</Link>.
+                <h1 className={"pt-[45px]"}>Product Mockups</h1>
+                <p className={"mt-[10px] mb-[30px] max-md:mb-[50px]"}>
+                    My interest in technology <Link href="/about-me" target="_blank" className={"font-medium underline"}>started with my interest in building products that people love</Link>.
                     Along the way I invested some time in the more customer facing elements of what creates a great product.
                     This is an important aspect of my attitude to tech, so I think it's worth sharing some of the project mockups I built as a way to help myself learn some of the
                     technologies in question.
                 </p>
                 <div>
                     {ProductMockups.map((p, index) => (
-                        <div key={Math.random()} className={"product-columns project-columns medium-bottom-separator"}>
+                        <div key={Math.random()} className={"mb-[30px] grid grid-cols-1 items-center gap-[50px] [&>*]:max-w-full min-[1201px]:grid-cols-3"}>
                             <Project
                                 startDate={p.project.startDate}
                                 endDate={p.project.endDate}

@@ -1,5 +1,3 @@
-import './hero.css'
-
 import {GeistSans} from "geist/font/sans";
 import ArrowLink from "@/components/arrow-link/ArrowLink";
 import Link from "next/link";
@@ -8,19 +6,19 @@ export default function Hero() {
     return (
         <>
                 <section className={"max-[850px]:!pt-0"}>
-                    <h1 className={`mf-hero ${GeistSans.className} tracking-tighter max-[850px]:text-6xl pt-10 pb-5 text-10xl max-[850px]:mb-0`}>
+                    <h1 className={`${GeistSans.className} pt-10 pb-[50px] text-[10rem] leading-[10rem] tracking-[-0.8rem] underline decoration-[#F2B79F] max-[800px]:pb-[10px] max-[800px]:text-[5rem] max-[800px]:leading-[1.2] max-[800px]:tracking-[-0.2rem]`}>
                         Mikey Fennelly
                     </h1>
-                    <div className={"medium-separator text-xl"}>
-                        <p><Link href={"https://software-engineering.ie"} target={"_blank"} className={"bold accent1 underline"}>Immersive Software Engineering [ISE]</Link> student (2nd year) at the University of Limerick, Ireland.</p>
+                    <div className={"py-[15px] text-xl"}>
+                        <p><Link href={"https://software-engineering.ie"} target={"_blank"} className={"font-medium underline"}>Immersive Software Engineering [ISE]</Link> student (2nd year) at the University of Limerick, Ireland.</p>
                         <br/>
                         <p>I'm a passionate technologist with a keen interest in Software Engineering, Artificial Intelligence and Graphical Content Creation.</p>
                         <br/>
-                        <p className="bold">When I'm not doing these things, I'm thinking about them!</p>
+                        <p className="font-medium">When I'm not doing these things, I'm thinking about them!</p>
                     </div>
 
-                    <section id={"cta-cards-section"}>
-                        <div className={"cta-cards-container"}>
+                    <section className={"pb-[30px] max-[800px]:px-[5px]"}>
+                        <div className={"grid justify-center gap-[30px] min-[850px]:grid-cols-2"}>
                             <CTACard href={'/product'} title={'Product Mockups'} icon={productIcon} brief={'My passion for tech started with wanting to create great products, originally on Shopify.'} arrowLinkTitle={'Product Mockups'} />
                             <CTACard href={'/linux-kernel-projects'} title={'Linux Kernel Projects'} icon={linuxIcon} brief={'In late 2024 I become very interested in Linux related technologies, and in particular those Linux techs that make cloud native computing possible e.g. containerization etc.'} arrowLinkTitle={'Linux Kernel Projects'} />
                             <CTACard href={'/other-software-projects'} title={'General Software Projects'} icon={codeIconSVG} brief={'Some cool projects that I have made along the way.'} arrowLinkTitle={'General Software Projects'} />
@@ -43,13 +41,13 @@ interface CTACardInterface {
 function CTACard({href, title, icon, brief, arrowLinkTitle}: CTACardInterface) {
     return (
         <>
-            <Link href={href}>
-                <div className={"cta-card-container bg-white"}>
-                    <div className={"cta-card-top-row"}>
-                        <h2>{icon} {title}</h2>
+            <Link href={href} className={"w-full max-w-none no-underline min-[950px]:w-auto min-[950px]:max-w-[600px]"}>
+                <div className={"mx-auto flex min-h-full w-full max-w-none flex-col rounded-[3px] bg-white px-[40px] py-[60px] shadow-[0_0_10px_rgba(0,0,0,0.1)] [&_svg]:mr-[5px] [&_svg]:inline min-[950px]:w-auto min-[950px]:max-w-[650px] min-[950px]:px-[clamp(20px,16vw-132px,60px)] min-[950px]:py-[clamp(30px,4vw-8px,40px)]"}>
+                    <div className={"mb-[20px] flex gap-[30px]"}>
+                        <h2 className={"text-[1.2rem] tracking-[-1px]"}>{icon} {title}</h2>
                     </div>
-                    <p className={"cta-card-brief"}>{brief}</p>
-                    <div className={"cta-card-arrow-link-container"}>
+                    <p className={"mb-[10px] font-light"}>{brief}</p>
+                    <div className={"mt-auto max-h-fit"}>
                         <ArrowLink
                             href={href}
                             label={arrowLinkTitle}

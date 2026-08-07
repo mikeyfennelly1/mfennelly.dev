@@ -23,10 +23,10 @@ export default function ExperienceItem(
     }: ExperienceItemInterface) {
     return (
         <>
-            <div className={"experience-item medium-separator"}>
-                <h3 className={"condense"}><span className={"bold accent1"}>{jobTitle}</span> - <Link href={companyLink} target={"_blank"} className={"font-light underline"}>{company}</Link></h3>
-                <h4 className={"accent2"}>{startDate} - {endDate}</h4>
-                <p className={"small-separator"}>{description}</p>
+            <div className={"py-[15px] first-of-type:pt-0"}>
+                <h3 className={"tracking-[-1.5px]"}><span className={"font-medium"}>{jobTitle}</span> - <Link href={companyLink} target={"_blank"} className={"font-light underline"}>{company}</Link></h3>
+                <h4 className={"text-[#dcdcdc]"}>{startDate} - {endDate}</h4>
+                <p className={"mt-[10px]"}>{description}</p>
                 {children}
             </div>
         </>

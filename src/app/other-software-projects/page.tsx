@@ -90,8 +90,8 @@ export default function Page() {
     return (
         <>
             <section>
-                <h1 className={"large-padding-gap-top"}>Other Software Projects</h1>
-                <p className={"small-separator medium-bottom-separator"}>Some other software projects.</p>
+                <h1 className={"pt-[45px]"}>Other Software Projects</h1>
+                <p className={"mt-[10px] mb-[30px]"}>Some other software projects.</p>
                 <SoftwareProjects projects={OtherSoftwareProjects}
                 ></SoftwareProjects>
             </section>

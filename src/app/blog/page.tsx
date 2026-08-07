@@ -5,7 +5,7 @@ export default function BlogPage() {
     const posts = getAllPosts();
 
     return (
-        <section className="section-padding large-padding-y container mx-auto min-h-screen">
+        <section className="container mx-auto min-h-screen pt-[45px] min-[800px]:px-12">
             <h1 className="mb-12">Blog</h1>
             <div className="grid gap-8">
                 {posts.map((post) => (

@@ -1,4 +1,3 @@
-import "./project.css"
 import {GeistMono} from "geist/font/mono";
 import {ReactNode} from "react";
 
@@ -36,7 +35,7 @@ export default function Project({projectName, projectBrief, projectSourceCodeLin
     return (
         <>
             <div>
-                <h3 className={`condense ${GeistMono.className}`}>{projectName}</h3>
+                <h3 className={`tracking-[-1.5px] ${GeistMono.className}`}>{projectName}</h3>
                 {(startDate && endDate)?
                     <h4>{startDate} - {endDate}</h4>
                 :

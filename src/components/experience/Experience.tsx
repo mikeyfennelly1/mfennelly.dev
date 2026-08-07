@@ -1,4 +1,3 @@
-import './experience.css'
 import ExperienceItem, {ExperienceItemInterface} from "@/components/experience/experience-item/ExperienceItem";
 
 interface ExperienceInterface {

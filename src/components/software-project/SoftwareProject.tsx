@@ -14,7 +14,7 @@ export function SoftwareProjects({projects}: SoftwareProjectsInterface) {
     return (
         <>
             {projects.map((p) => (
-                <div key={Math.random()} className={"project-columns"}>
+                <div key={Math.random()} className={"grid grid-cols-1 items-center gap-[50px] [&>*]:max-w-full min-[1201px]:grid-cols-2"}>
                     <Project
                         startDate={p.project.startDate}
                         endDate={p.project.endDate}
@@ -40,7 +40,7 @@ export default function SoftwareProject({project, repo}: SoftwareProjectInterfac
     return (
         <>
             <section>
-                    <div key={Math.random()} className={"project-columns"}>
+                    <div key={Math.random()} className={"grid grid-cols-1 items-center gap-[50px] [&>*]:max-w-full min-[1201px]:grid-cols-2"}>
                         <Project
                             startDate={project.startDate}
                             endDate={project.endDate}

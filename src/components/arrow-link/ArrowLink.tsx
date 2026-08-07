@@ -1,7 +1,5 @@
 "use client"
 
-import './arrow-link.css';
-
 export interface ArrowLinkProps {
     href: string;          // The URL the link points to
     label: string;         // The text displayed for the link
@@ -12,12 +10,12 @@ export default function ArrowLink({ label }: ArrowLinkProps) {
 
     return (
         <div
-            id={`arrow-link`}
+            className="flex max-h-fit max-w-fit pr-[10px] font-['Space_Grotesk',sans-serif] text-black no-underline transition-all duration-1000 ease-in-out"
         >
             {label}
-            <span id='arrow-link-arrow-horizontal-line'></span>
+            <span className="my-auto ml-[10px] h-px min-w-[10px] bg-black transition-all duration-1000 ease-in-out"></span>
             <svg
-                id="arrow-link-arrow-head"
+                className="my-auto"
                 width="5" height="8"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path

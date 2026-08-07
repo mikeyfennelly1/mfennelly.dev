@@ -1,5 +1,3 @@
-import "./nav-slideout.css"
-
 import {useContext} from "react";
 import {link, NavContext} from "@/components/navbar/Navbar";
 import Link from "next/link";
@@ -19,11 +17,15 @@ export default function NavSlideout({links}: NavSlideoutProps) {
 
     return (
         <>
-            <div className={`slideout-menu ${isOpen ? "slideout-menu-active" : ""}`} id="nav-slideout">
+            <div
+                id="nav-slideout"
+                className={`fixed top-0 min-h-screen min-w-[100vw] bg-white px-[30px] py-[100px] transition-all duration-500 ease-in-out [&>*]:block [&>*]:text-[1.75rem] [&>*]:leading-[3.5rem] [&>*]:font-light ${
+                    isOpen ? "right-0 opacity-100 pointer-events-auto" : "left-0 opacity-0 pointer-events-none"
+                }`}>
                 {links.map((link) => (
                     <Link
                         onClick={navContext.toggleMenu}
-                        className={"nav-slideout-link"}
+                        className={`transition-opacity delay-[250ms] duration-500 ease-in-out ${isOpen ? "opacity-100" : "opacity-0"}`}
                         key={link.text}
                         href={link.href}>
                         {link.text}

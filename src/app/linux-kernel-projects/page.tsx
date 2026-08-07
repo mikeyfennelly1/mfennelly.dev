@@ -51,8 +51,8 @@ export default function LinuxKernelProjects() {
     return (
         <>
             <section>
-                <h1 className={"large-padding-gap-top"}>Linux Kernel Projects</h1>
-                <p className={"small-separator medium-bottom-separator"}>Low level operating system technology is a topic that I have been getting very interested in since beginning college. Mark Burkley is a  man who has had huge influence on my work since starting college. This interest of mine has been largely fostered by Mark (perhaps unbeknownst to himself) so I have to give him his flowers for being an inspiration to some of the following work.</p>
+                <h1 className={"pt-[45px]"}>Linux Kernel Projects</h1>
+                <p className={"mt-[10px] mb-[30px]"}>Low level operating system technology is a topic that I have been getting very interested in since beginning college. Mark Burkley is a  man who has had huge influence on my work since starting college. This interest of mine has been largely fostered by Mark (perhaps unbeknownst to himself) so I have to give him his flowers for being an inspiration to some of the following work.</p>
                 <SoftwareProjects
                     projects={LinuxKernelProjectsInfo}
                 ></SoftwareProjects>

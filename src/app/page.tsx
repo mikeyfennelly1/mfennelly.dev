@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <>
             <Hero></Hero>
-            <section id={"experience"} className={"section-padding large-bottom-separator invert-colors large-padding-y"}>
+            <section className={"mb-[30px] bg-[#222222] pt-[45px] pb-[50px] text-white min-[800px]:px-20"}>
                 <Experience
                     experienceItems={[
                         {
@@ -25,7 +25,7 @@ export default function Home() {
                             description: "During my time at Manna I worked on the airspace team, which is responsible for the autonomous orchestration systems for fleets of delivery drones across the world. I was lucky enough to be trusted to work on many projects with significant business consequences. Some of the projects I worked on included:",
                             companyLink: "https://www.manna.aero/",
                             children: (
-                                <div className={"manna-projects"}>
+                                <div className={"grid min-[1200px]:px-[100px] min-[1200px]:py-[50px]"}>
                                     {mannaProjectBriefs.map((brief) => (
                                         <MidlandSteelProject
                                             key={Math.random()}
@@ -45,7 +45,7 @@ export default function Home() {
                             description: "Heavily involved in the design and implementation of many key projects. Wrote software to help integrate a number of existing software systems. Also created a system to provide business intelligence on MSRS. Some of the systems I worked on were implemented fully by me in house, while some others were developed by me as Proof of Concepts and then handed off to external companies for further development. Some of the projects I was involved in included:",
                             companyLink: "https://midlandsteelreinforcement.com/",
                             children: (
-                                <div className={"midland-steel-projects"}>
+                                <div className={"grid [&>*]:mb-0 [&>*]:inline min-[1200px]:px-[100px] min-[1200px]:py-[50px]"}>
                                     {midlandSteelProjectBriefs.map((brief) => (
                                         <MidlandSteelProject
                                             key={Math.random()}
@@ -90,20 +90,20 @@ interface MidlandSteelProjectProps {
     circleColour: string;
 }
 
-function MidlandSteelProject({projectBrief, bulletPointSize, circleColour}: MidlandSteelProjectProps) {
+function MidlandSteelProject(props: MidlandSteelProjectProps): React.ReactNode {
     return (
         <>
-            <div className={"midland-steel-project-outer-container"}>
-                <div className={"project-circle-container"}>
+            <div className={"flex"}>
+                <div className={"inline max-w-fit mt-[5px] mr-[30px]"}>
                     <svg
-                        className={"midland-steel-project-circle"}
-                        xmlns="http://www.w3.org/2000/svg" width={bulletPointSize * 2} height={bulletPointSize * 2}>
-                        <circle cx={bulletPointSize} cy={bulletPointSize} r={bulletPointSize} fill={circleColour}/>
+                        className={"my-[10px]"}
+                        xmlns="http://www.w3.org/2000/svg" width={props.bulletPointSize * 2} height={props.bulletPointSize * 2}>
+                        <circle cx={props.bulletPointSize} cy={props.bulletPointSize} r={props.bulletPointSize} fill={props.circleColour}/>
                     </svg>
                 </div>
-                <div className={"project-brief-container"}>
+                <div className={"inline max-w-fit"}>
                     <p>
-                        {projectBrief}
+                        {props.projectBrief}
                     </p>
                 </div>
             </div>

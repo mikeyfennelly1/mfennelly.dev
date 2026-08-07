@@ -1,7 +1,5 @@
 "use client"
 
-import "./nav-bar-mobile.css"
-
 import NavToggleButton from "../nav-toggle-button/NavToggleButton";
 import React, {useContext} from "react";
 import {NavContext} from "../Navbar";

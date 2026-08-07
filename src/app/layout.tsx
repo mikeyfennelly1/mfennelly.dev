@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={GeistSans.className}>
-      <body>
+      <body className="relative min-h-screen min-w-[100vw] overflow-x-hidden bg-background pb-[400px] text-foreground [&>section]:mt-[30px] [&>section]:pb-[30px]">
       <Navbar
           links={[
               {

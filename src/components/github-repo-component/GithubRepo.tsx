@@ -1,5 +1,3 @@
-import "./github-repo.css"
-
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import {GeistMono} from "geist/font/mono";
@@ -17,24 +15,24 @@ export interface RepoInterface {
 const Repo = ({ repoName, description, technologies, topics, repoURL }: RepoInterface) => {
     return (
         <>
-            <div className="repo-card repo-card-drop-shadow">
-                    <div className={"top-card"}>
-                        <img className={"repo-owner-avatar"} src='/profile-photo.png' alt=""/>
-                        <div className={"repo-title-owner-container"}>
+            <div className="max-w-[calc(100vw-60px)] min-h-[300px] rounded-[3px] bg-white p-[30px] shadow-[0_0_10px_rgba(0,0,0,0.1)] [&_a]:no-underline min-[800px]:mt-[30px] min-[800px]:mr-[20px] min-[800px]:mb-[50px] min-[800px]:ml-[50px]">
+                    <div className={"flex gap-[20px]"}>
+                        <img className={"max-h-[50px]"} src='/profile-photo.png' alt=""/>
+                        <div className={"min-w-fit"}>
                             <Link href={repoURL} target={"_blank"}>
-                                <button className={"repo-project-source-code-button"}><img src="/github-mark.svg" width="16" style={{display: "inline", marginRight: "3px"}}/>mikeyfennelly1/{repoName}</button>
+                                <button className={"cursor-pointer rounded-full bg-white px-[10px] py-[15px] text-xs text-black"}><img src="/github-mark.svg" width="16" style={{display: "inline", marginRight: "3px"}}/>mikeyfennelly1/{repoName}</button>
                             </Link>
                         </div>
                     </div>
-                    <p className={"repo-description small-separator"}>
+                    <p className={"mt-[10px] text-base"}>
                         {description}
                     </p>
-                    <div className={"repo-topics small-separator"}>
+                    <div className={"mt-[10px] flex gap-[10px]"}>
                         {topics?.map((topic) => (
-                            <span key={Math.random()} className={"repo-topic"}>{topic}</span>
+                            <span key={Math.random()} className={"rounded-full bg-[#efefef] px-[10px] py-[5px] text-xs"}>{topic}</span>
                         ))}
                     </div>
-                    <div className={"technologies-container"}>
+                    <div className={"mt-12 flex min-h-full flex-wrap [&>*]:mr-[10px] [&>*]:inline [&>*]:min-w-fit"}>
                         {technologies?.map((tech) => (
                             <span key={Math.random()} className={" flex"}>{tech}</span>
                         ))}
